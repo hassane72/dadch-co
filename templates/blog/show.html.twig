@@ -1,0 +1,181 @@
+{% extends "base.html.twig" %}
+
+{% block title %}
+    {{ad.title}}
+{% endblock %}
+
+{% block body %}
+ <section class="section overflow-content page-style-2">
+      <div class="empty-sp-md-200 empty-sp-sm-100 empty-sp-xs-100"></div>
+	   <div class="container">
+         <div class="title-style-1">
+         
+         {% for label, messages in app.flashes %}
+                                <div class="alert alert-{{ label }}">
+                                    {% for message in messages %}
+                                        <p class="">{{ message | raw }}</p>
+                                    {% endfor %}
+                                </div>
+        {% endfor %}
+            <div class="sub-title-post">
+                <span class="link">{{ad.createdAt|date("F jS \\a\\t g:ia")}}</span>
+                <span class="link">{{ad.author.fullName}}</span>
+                <div class="like link">
+                    {% if ad.comments | length > 0 %}
+                        {% include "partials/rating.html.twig" with {'rating': ad.avgRatings } %}
+                    {% else %}    
+                        <small>Pas encore noté</small>
+                    {% endif %}
+                  <a href="#" class="info-icon"><span>{{ad.avgRatings|number_format(1, ',', ' ')}}</span><i class="icon-heart-empty"></i></a>
+                  <a href="#" class="info-icon"><span>{{ad.comments|length}}</span><i class="icon-comment-empty"></i></a>
+                </div>
+            </div>
+              <h1 class="caption-1 color-2">{{ad.title}}</h1>
+               <div class="empty-sp-sm-15 empty-sp-xs-15"></div>
+                <div class="simple-text size-2 color-2">
+                    <p>{{ad.introduction}}</p>
+                </div>
+         </div>
+         <div class="empty-sp-md-70 empty-sp-sm-30 empty-sp-xs-30"></div>
+	     <div class="row">
+	         <div class="col-lg-8 col-md-12 col-xs-12">
+                <article>
+                      <img src="{{ad.coverImage}}" alt="" class="wow slideInLeft">
+                      <div class="empty-sp-sm-40 empty-sp-xs-30"></div>
+                      <p>{{ad.contenu|raw}} </p>
+                      <div class="empty-sp-sm-40 empty-sp-xs-30"></div>
+                      {% for image in ad.imageBlogs %}
+                        <img src="{{image.url}}" alt="{{image.caption}}" class="wow slideInLeft left">
+                      {% endfor %}
+                      <div class="empty-sp-sm-40 empty-sp-xs-30"></div>
+                      <blockquote>
+                      </blockquote>
+                      <div class="empty-sp-sm-50 empty-sp-xs-30"></div>
+                     
+                </article>
+                      
+                <div class="empty-sp-sm-50 empty-sp-xs-30"></div>
+                    
+                <div class="post-tags wow slideInLeft">
+                   <h6 class="title caption-4">tags</h6>
+                     <a href="#" class="btn btn-outline-secondary btn-xs tag-link toggle-link sm ">Expression</a>
+                     <a href="#" class="btn btn-outline-secondary btn-xs tag-link toggle-link sm ">Inspiration</a>
+                     <a href="#" class="btn btn-outline-secondary btn-xs tag-link toggle-link sm ">Travaille</a>
+                     <div class="empty-sp-md-0 empty-sp-sm-30 empty-sp-xs-30"></div> 
+                </div>
+                     
+                <div class="share-link wow slideInLeft">
+                   <h6 class="title caption-4">SHARE</h6>   <a href="https://linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fwww.dadch-co.com&title={{ad.title}}" target="_blank"><i class="icon-pinterest"></i></a>
+                     <a href="https://twitter.com/share?url=http%3A%2F%2Fwww.dadch-co.com&text={{ad.title}}" target="_blank"><i class="icon-twitter"></i></a>  
+                </div> 
+				<div class="empty-sp-md-80 empty-sp-sm-60 empty-sp-xs-60"></div> 
+				
+                <div class="comments-block wow slideInLeft">    
+                     <h2 class="caption-2 sm title">Commentaires</h2> 
+                       <div class="empty-sp-md-65 empty-sp-sm-50 empty-sp-xs-30"></div> 
+                       {% for comment in ad.comments %}
+                         <div class="comment-item">
+                           <div class="vertical-wrap">
+                            <div class="image align-item">
+                                <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588604073/dadch-co/contact/user_zv0eev.png" alt="">
+                            </div>
+                            <div class="title align-item">
+                                <h4 class="caption-4"><a href="#">{{comment.fullName}}</a></h4>
+                                 <div class="empty-sp-sm-10 empty-sp-xs-10"></div> 
+                                  <i class="date-post">{{comment.createdAt|date("F jS \\a\\t g:ia")}}</i>
+                            </div>
+                           </div>
+                           <div class="empty-sp-sm-15 empty-sp-xs-15"></div>    
+                            <div class="simple-text size-1 color-2">
+                                <p>{{comment.contenu}}</p>
+                            </div> 
+                            {% include "partials/rating.html.twig" with {'rating':comment.rating}%}
+                         </div>
+                         <div class="empty-sp-md-50 empty-sp-sm-30 empty-sp-xs-30"></div>
+                       {% endfor %}
+                </div>                 
+	            {{form_start(form)}}
+                  <h2 class="caption-2 sm title">LAISSEZ UNE RÉPONSE</h2> 
+                     <div class="empty-sp-sm-30 empty-sp-xs-30"></div>    
+                     <div class="row">
+                         <div class="col-md-6">
+                              <div class="input-group input-style-2 color-2">
+                                 {{form_row(form.firstName)}}
+                              </div>
+                              <div class="empty-sp-sm-20 empty-sp-xs-20"></div>   
+                         </div>
+                         <div class="col-md-6">
+                              <div class="input-group input-style-2 color-2">
+                                {{form_row(form.lastName)}}
+                              </div>
+                              <div class="empty-sp-sm-20 empty-sp-xs-20"></div> 
+                         </div>
+                     </div>
+                     <div class="row">
+                         <div class="col-md-6">
+                              <div class="input-group input-style-2 color-2">
+                                 {{form_row(form.email)}}
+                              </div>
+                              <div class="empty-sp-sm-20 empty-sp-xs-20"></div>   
+                         </div>
+                         <div class="col-md-6">
+                              <div class="input-group input-style-2 color-2">
+                                {{form_row(form.rating)}}
+                              </div>
+                              <div class="empty-sp-sm-20 empty-sp-xs-20"></div> 
+                         </div>
+                     </div>
+                     <div class="input-group input-style-2 color-2">
+                         {{form_row(form.contenu)}}
+                     </div>
+                     <div class="empty-sp-sm-50 empty-sp-xs-30"></div>
+                     <input type="submit" class="submit btn btn-primary button-style-1 type-1 font-3" value="Confirmer !" name="submit">
+                {{form_end(form)}}
+                <div class="empty-sp-md-130 empty-sp-sm-100 empty-sp-xs-60"></div>       
+	         </div>
+	         <div class="col-lg-4 col-md-12 col-xs-12">
+	             <div class="blog-sidebar sidebar">
+	                <form action="{{path('blog_search')}}" method="get" class="search-form wow slideInRight">
+	                    <div class="input-group input-style-2">
+                          <input type="text" class="form-control" name="search" placeholder="Leave your question..." required>
+                          <span class="input-group-btn">
+                            <button class="btn btn-secondary button-style-2" type="submit">search</button>
+                          </span>
+                        </div>
+	                </form>
+	                <div class="empty-sp-md-60 empty-sp-sm-25 empty-sp-xs-30"></div>
+	                <div class="sidebar-blog-item wow slideInRight">
+	                   <h3 class="caption-3 title">category</h3>
+                         <div class="empty-sp-md-30 empty-sp-sm-30 empty-sp-xs-20"></div>
+	                     <ul class="category-list">
+                            {% for type in types %}
+	                         <li><a href="#">{{type.name}}<span>({{type.blog|length}})</span></a></li>
+                            {% endfor %}
+	                     </ul>
+                    </div>
+                    <div class="empty-sp-md-50 empty-sp-sm-20 empty-sp-xs-20"></div>
+                    <div class="sidebar-blog-item wow slideInRight">
+	                   <h3 class="caption-3 title">Derniers articles</h3>
+                         <div class="empty-sp-md-30 empty-sp-sm-30 empty-sp-xs-20"></div>
+                        {% for ad in ads %}
+                           <div class="recent-post vertical-wrap">
+                               <div class="image align-item hover-img">
+                                   <a href="blog_post.html"><img src="{{ad.annonce.coverImage}}" alt="" class="resp-img"></a>
+                               </div>
+                               <div class="text align-item">
+                                   <a href="blog_post.html" class="caption-4">{{ad.annonce.title}}</a>
+                                 <div class="empty-sp-sm-25 empty-sp-xs-20"></div>
+                                  <span class="date-post">{{ad.annonce.createdAt|date("F jS \\a\\t g:ia")}}</span>
+                               </div>
+                           </div>
+                           <div class="empty-sp-sm-30 empty-sp-xs-15"></div>
+                        {% endfor %}
+                    </div> 
+                    
+                    <div class="empty-sp-md-75 empty-sp-sm-80 empty-sp-xs-50"></div>
+	             </div>
+	         </div>
+	     </div>
+	   </div>
+    </section>
+{% endblock %}

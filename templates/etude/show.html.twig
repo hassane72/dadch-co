@@ -1,0 +1,118 @@
+{% extends "base.html.twig" %}
+
+{% block title %}
+    {{etude.subject}}
+{% endblock %}
+
+{% block body %}
+ <section class="section overflow-content page-style-2">
+      <div class="empty-sp-md-200 empty-sp-sm-100 empty-sp-xs-100"></div>
+	   <div class="container">
+         <div class="title-style-1">
+            <div class="sub-title-post">
+                <span class="link">{{etude.periode}}</span>
+                <span class="link">{{etude.compagny}}</span>
+                <div class="like link">
+                    {% if etude.pays | length > 0 %}
+                            <a href="#" class="info-icon"><span>
+                            {% for pay in etude.pays %}
+                                {{pay.nomFr}}
+                            {% endfor %}
+                            </span></a>
+                            {% else %}    
+                                <small>Aucun pays associé</small>
+                    {% endif %}
+                  </div>
+            </div>
+              <h1 class="caption-1 color-2">{{etude.subject}}</h1>
+               <div class="empty-sp-sm-15 empty-sp-xs-15"></div>
+                <div class="simple-text size-2 color-2">
+                    <p>Type d'étude: {{etude.typeOfStudy}}</p>
+                    <p>Secteur: {{etude.secteur}}</p>
+                </div>
+         </div>
+         <div class="empty-sp-md-70 empty-sp-sm-30 empty-sp-xs-30"></div>
+	     <div class="row">
+	         <div class="col-lg-8 col-md-12 col-xs-12">
+                <article>
+                      <img src="/img/dadch/etude/10.jpg" alt="" class="wow slideInLeft">
+                      <div class="empty-sp-sm-40 empty-sp-xs-30"></div>
+                      <p>{{etude.contenu|raw}} </p>
+                      <div class="empty-sp-sm-40 empty-sp-xs-30"></div>
+                      {% for image in etude.imageEtudes %}
+                        <img src="{{image.url}}" alt="{{image.caption}}" class="wow slideInLeft left">
+                      {% endfor %}
+                      <div class="empty-sp-sm-40 empty-sp-xs-30"></div>
+                      <blockquote>
+
+                      </blockquote>
+                      <div class="empty-sp-sm-50 empty-sp-xs-30"></div>
+                     
+                </article>
+                      
+                <div class="empty-sp-sm-50 empty-sp-xs-30"></div>
+                    
+                <div class="post-tags wow slideInLeft">
+                   <h6 class="title caption-4">tags</h6>
+                     <a href="#" class="btn btn-outline-secondary btn-xs tag-link toggle-link sm ">Expression</a>
+                     <a href="#" class="btn btn-outline-secondary btn-xs tag-link toggle-link sm ">Inspiration</a>
+                     <a href="#" class="btn btn-outline-secondary btn-xs tag-link toggle-link sm ">Travaille</a>
+                     <div class="empty-sp-md-0 empty-sp-sm-30 empty-sp-xs-30"></div> 
+                </div>
+                     
+                <div class="share-link wow slideInLeft">
+                   <h6 class="title caption-4">SHARE</h6>
+                     <a href="https://linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fwww.dadch-co.com&title={{etude.subject}}" target="_blank"><i class="icon-pinterest"></i></a>
+                     <a href="https://twitter.com/share?url=http%3A%2F%2Fwww.dadch-co.com&text={{etude.subject}}" target="_blank"><i class="icon-twitter"></i></a> 
+                </div> 
+				<div class="empty-sp-md-80 empty-sp-sm-60 empty-sp-xs-60"></div> 
+				     
+	         </div>
+	         <div class="col-lg-4 col-md-12 col-xs-12">
+	             <div class="blog-sidebar sidebar">
+	                <form action="{{path('etude_search')}}" method="get" class="search-form wow slideInRight">
+	                    <div class="input-group input-style-2">
+                          <input type="text" class="form-control" name="search" placeholder="Leave your question..." required>
+                          <span class="input-group-btn">
+                            <button class="btn btn-secondary button-style-2" type="submit">search</button>
+                          </span>
+                        </div>
+	                </form>
+	                <div class="empty-sp-md-60 empty-sp-sm-25 empty-sp-xs-30"></div>
+	                <div class="sidebar-blog-item wow slideInRight">
+	                   <h3 class="caption-3 title">category</h3>
+                         <div class="empty-sp-md-30 empty-sp-sm-30 empty-sp-xs-20"></div>
+	                     <ul class="category-list">
+                            {% for pay in pays %}
+                            {% if pay.etude|length > 0 %}
+	                         <li><a href="#">{{pay.nomFr}}<span>({{pay.etude|length}})</span></a></li>
+                             {% endif %}
+                            {% endfor %}
+	                     </ul>
+                    </div>
+                    <div class="empty-sp-md-50 empty-sp-sm-20 empty-sp-xs-20"></div>
+                    <div class="sidebar-blog-item wow slideInRight">
+	                   <h3 class="caption-3 title">Derniers études</h3>
+                         <div class="empty-sp-md-30 empty-sp-sm-30 empty-sp-xs-20"></div>
+                        {% for etude in etudes %}
+                           <div class="recent-post vertical-wrap">
+                               <div class="image align-item hover-img">
+                                   <a href="{{path('blog_show', {'slug': etude.study.slug})}}"><img src="/img/dadch/etude/10.jpg" alt="" class="resp-img"></a>
+                               </div>
+                               <div class="text align-item">
+                                   <a href="{{path('blog_show', {'slug': etude.study.slug})}}" class="caption-4">{{etude.study.subject}}</a>
+                                 <div class="empty-sp-sm-25 empty-sp-xs-20"></div>
+                                  <span class="date-post">{{etude.study.periode}}</span>
+                               </div>
+                           </div>
+                           <div class="empty-sp-sm-30 empty-sp-xs-15"></div>
+                        {% endfor %}
+                    </div> 
+                    
+                    <div class="empty-sp-md-75 empty-sp-sm-80 empty-sp-xs-50"></div>
+	             </div>
+	         </div>
+	     </div>
+	   </div>
+    </section>
+{% endblock %}

@@ -1,0 +1,74 @@
+{% extends 'base-login.html.twig' %}
+
+{% block title %}Connexion au site!{% endblock %}
+
+{% block body %}
+<!--Page Container Start Here-->
+<section class="login-container">
+<div class="container">
+<div class="col-md-4 col-md-offset-4 col-sm-4 col-sm-offset-4">
+<div class="login-form-container">
+    {% if hasError %}
+            <div class="alert alert-warning">
+                <p>Les informations que vous avez fornies ne sont pas bonnes.</p>
+            </div>
+    {% endif %}
+    <form action="{{ path('account_login')}}" method="post" class="j-forms" >
+
+        <div class="login-form-header">
+            <div class="logo">
+                <a href="{{path('homepage')}}" title="Admin Template"><img src="/img/logo.png" alt="logo"></a>
+            </div>
+        </div>
+        <div class="login-form-content">
+
+
+
+            <!-- start login -->
+            <div class="unit">
+                <div class="input login-input">
+                    <label class="icon-left" for="login">
+                        <i class="zmdi zmdi-account"></i>
+                    </label>
+                    <input class="form-control login-frm-input"  type="text" id="email" value="{{username}}" name="_username" placeholder="Email" required>
+                </div>
+            </div>
+            <!-- end login -->
+
+            <!-- start password -->
+            <div class="unit">
+                <div class="input login-input">
+                    <label class="icon-left" for="password">
+                        <i class="zmdi zmdi-key"></i>
+                    </label>
+                    <input class="form-control login-frm-input"  type="password" id="password" name="_password" placeholder="Password" required>
+                </div>
+            </div>
+            <!-- end password -->
+
+
+
+        </div>
+        <div class="login-form-footer">
+            <button type="submit" class="btn-block btn btn-primary">Connexion !</button>
+        </div>
+
+    </form>
+</div>
+</div>
+</div>
+<!--Footer Start Here -->
+<footer class="login-page-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4 col-sm-4 col-sm-offset-4">
+                <div class="footer-content">
+                    <span class="footer-meta">Crafted with&nbsp;<i class="fa fa-heart"></i>&nbsp;by&nbsp;<a href="http://themeforest.net/user/westilian">westilian</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--Footer End Here -->
+</section>
+{% endblock %}

@@ -1,0 +1,54 @@
+<!--Topbar End Here-->
+<!--Leftbar Start Here-->
+<aside class="leftbar material-leftbar">
+    <div class="left-aside-container">
+        <div class="user-profile-container">
+            <div class="user-profile clearfix">
+                <div class="admin-user-thumb">
+                    <img src="{{app.user.picture}}" alt="Avatar de {{app.user.fullName}}">
+                </div>
+                <div class="admin-user-info">
+                    <ul>
+                        <li><a href="#">{{app.user.fullName}}</a></li>
+                        <li><a href="#">{{app.user.email}}</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="admin-bar">
+                <ul>
+                    <li><a href="{{ path('account_logout') }}"><i class="zmdi zmdi-power"></i>
+                    </a>
+                    </li>
+                    <li><a href="#"><i class="zmdi zmdi-account"></i>
+                    </a>
+                    </li>
+                    <li><a href="{{path('homepage')}}" target="_balnk"><i class="zmdi zmdi-eye"></i></i>
+                    </a>
+                    </li>
+                    <li><a href="#"><i class="zmdi zmdi-settings"></i>
+                    </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <ul class="list-accordion">
+            <li class="list-title">Dashboard</li>
+            <li><a href="{{ path('admin_blog_index')}}"><i class="zmdi zmdi-widgets"></i><span class="list-label">Articles</span></a></li>
+            <li><a href="{{ path('admin_etude_index')}}"><i class="zmdi zmdi-calendar-alt"></i><span class="list-label">Etudes</span></a></li>
+            <li><a href="{{ path('admin_comment_index')}}"><i class="zmdi zmdi-format-size"></i><span class="list-label">Commentaire</span></a></li>
+            <li><a href="#"><i class="zmdi zmdi-border-all"></i><span class="list-label">Utilisateur</span></a></li>
+        </ul>
+    </div>
+</aside>
+<!--Leftbar End Here-->
+<!--Page Container Start Here-->
+<section class="main-container">
+{% for label, messages in app.flashes %}
+        <div class="container">
+            <div class="alert alert-{{ label }}">
+                {% for message in messages %}
+                    <p>{{ message | raw }}</p>
+                {% endfor %}
+            </div>
+        </div>
+    {% endfor %}

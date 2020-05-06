@@ -1,0 +1,82 @@
+{% extends 'admin/base.html.twig' %}
+
+{% block title %}Administration des annonces{% endblock %}
+
+{% block body %}
+    <div class="container-fluid">
+        <div class="page-header filled full-block light">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Administration du site</h2>
+                    <p>Dadch&amp;co</p>
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-page-breadcrumb">
+                        <li><a href="#">Home <i class="zmdi zmdi-chevron-right"></i></a></li>
+                        <li><a href="#">Articles <i class="zmdi zmdi-chevron-right"></i></a></li>
+                        <li class="active-page"> List</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="widget-wrap  material-table-widget">
+                    <div class="widget-container margin-top-0">
+                        <div class="widget-content">
+                            <div class="data-action-bar">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="widget-header">
+                                            <h3>Anonce table</h3>
+                                            <p>
+                                               List des anonces
+                                            </p>
+                                            <a href="{{path('admin_blog_new')}}" class="btn btn-primary">Créer un nouvelle annonce</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <table class="table table-striped data-tbl">
+                                <thead>
+                                <tr>
+                                    <th>Id</th>
+                                    <th>Titre</th>
+                                    <th class="td-center">Auteur</th>
+                                    <th class="text-center">Note</th>
+                                    <th class="td-center">Action</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                {% for ad in pagination.data %}
+                                <tr>
+                                    <td>{{ad.id}}</td>
+                                    <td>{{ad.title}}</td>
+                                    <td class="td-center">
+                                        <a href="#" class="td-profile-thumb"><img src="{{ad.author.picture}}" alt="Avatar de {{ad.author.fullName}}"></a>
+                                    </td>
+                                    <td><label class="badge badge-primary rounded"> {{ad.avgRatings | number_format(1, ',', ' ')}}</label></td>
+                                    <td class="td-center">
+                                        <div class="btn-toolbar" role="toolbar">
+                                            <div class="btn-group" role="group">
+                                                <a href="{{path('admin_blog_edit', {'id': ad.id})}}" class="btn btn-default btn-sm m-user-edit"><i class="zmdi zmdi-edit"></i></a>
+                                                <a href="{{path('admin_blog_delete', {'id': ad.id})}}" class="btn btn-default btn-sm m-user-delete" onclick="return confirm(`Etes vous sur de vouloir supprimer l'annonce : {{ad.title}} ?`)"><i class="zmdi zmdi-close"></i></a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                 {% endfor %}
+                                </tbody>
+                            </table>
+                            {{pagination.display()}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+{% endblock %}

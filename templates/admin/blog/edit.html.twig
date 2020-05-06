@@ -1,0 +1,81 @@
+{% extends "admin/base.html.twig" %}
+
+{% block title %}Modification de l'articles {{blog.id}}{% endblock %}
+
+{% form_theme form 'admin/blog/_collection.html.twig' %}
+
+{% block body %}
+
+    <div class="container-fluid">
+        <div class="page-header filled full-block light">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Administration du site</h2>
+                    <p>Dadch&amp;co</p>
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-page-breadcrumb">
+                        <li><a href="#">Home <i class="zmdi zmdi-chevron-right"></i></a></li>
+                        <li><a href="#">Articles <i class="zmdi zmdi-chevron-right"></i></a></li>
+                        <li class="active-page"> Modification</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="widget-wrap">
+                    <div class="widget-header block-header margin-bottom-0 clearfix">
+                        <div class="pull-left">
+                            <h3>Formulaire de modification</h3>
+                            <p>Article</p>
+                        </div>
+                    </div>
+                    <div class="widget-container">
+                        <div class="widget-content">
+                          {{form_start(form)}}
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="alert alert-light">
+                                        <h2>Informations génerales</h2>
+                                        <hr>
+                                        {{form_row(form.title)}}
+                                        {{form_row(form.slug)}}
+                                        {{form_row(form.typeBlog)}}
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="alert alert-light">
+                                        <h2>Image de l'annonce</h2>
+                                        <hr>
+                                        {{form_row(form.coverImage)}}
+                                        {{form_row(form.imageBlogs)}}
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="alert alert-light">
+                                        <h2>Détails de l'annonce</h2>
+                                        <hr>
+                                        {{form_row(form.introduction)}}
+                                        {{form_row(form.contenu)}}
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary"><i class="zmdi zmdi-check"></i>Enregistrer les modification de  l'article</button>
+                            {{form_end(form)}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+
+    <script  src="/js/ad.js"></script>
+{% endblock %}
+

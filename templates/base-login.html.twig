@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+        <title>Admin-{% block title %}Welcome !{% endblock %}</title>
+        <link type="text/css" rel="stylesheet" href="/admin/css/font-awesome.css">
+        <link type="text/css" rel="stylesheet" href="/admin/css/material-design-iconic-font.css">
+        <link type="text/css" rel="stylesheet" href="/admin/css/bootstrap.css">
+        <link type="text/css" rel="stylesheet" href="/admin/css/animate.css">
+        <link type="text/css" rel="stylesheet" href="/admin/css/layout.css">
+        <link type="text/css" rel="stylesheet" href="/admin/css/components.css">
+        <link type="text/css" rel="stylesheet" href="/admin/css/widgets.css">
+        <link type="text/css" rel="stylesheet" href="/admin/css/plugins.css">
+        <link type="text/css" rel="stylesheet" href="/admin/css/pages.css">
+        <link type="text/css" rel="stylesheet" href="/admin/css/bootstrap-extend.css">
+        <link type="text/css" rel="stylesheet" href="/admin/css/common.css">
+        <link type="text/css" rel="stylesheet" href="/admin/css/responsive.css">
+        {% block stylesheets %}{% endblock %}
+    </head>
+    <body class="login-page">
+        {% block body %}{% endblock %}
+        <script src="/admin/js/lib/jquery.js"></script>
+        <script src="/admin/js/lib/jquery-migrate.js"></script>
+        <script src="/admin/js/lib/bootstrap.js"></script>
+        <script src="/admin/js/lib/jRespond.js"></script>
+        <script src="/admin/js/lib/hammerjs.js"></script>
+        <script src="/admin/js/lib/jquery.hammer.js"></script>
+        <script src="/admin/js/lib/smoothscroll.js"></script>
+        <script src="/admin/js/lib/smart-resize.js"></script>
+
+        <script src="/admin/js/lib/jquery.validate.js"></script>
+        <script src="/admin/js/lib/jquery.form.js"></script>
+        <script src="/admin/js/lib/j-forms.js"></script>
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>

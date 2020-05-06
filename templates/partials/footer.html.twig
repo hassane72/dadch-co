@@ -1,0 +1,76 @@
+   
+    <footer class="footer-style-2">
+      <div class="empty-sp-md-70 empty-sp-sm-50 empty-sp-xs-50"></div>
+       <div class="container">
+           <div class="row">
+               <div class="col-lg-3 col-sm-6 col-xs-12">
+                   <div class="footer-item">
+                       <div class="logo-footer">
+                          <a href="#"><img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588599524/dadch-co/logo_c8ujnm.png" alt="Image logo"></a>
+                       </div>
+                         <div class="empty-sp-sm-30 empty-sp-xs-20"></div> 
+                          <ul class="footer-address">
+                              <li>
+                                    <p>
+                                        Dadch&amp;co Market Research SASU, VDNxBourguiba Place OMVS Dakar, Sénégal – Dakar (Sénégal)
+                                    </p>
+                                </li>
+                              <li><a href="mailto:">Email: info-dadch@dadch-co.com</a></li>
+                              <li><a href="tel:">Tel: (+221) 33 824 74 21 / 76 739 35 65</a></li>
+                          </ul>
+                          <div class="empty-sp-sm-10 empty-sp-xs-10"></div> 
+                          <div class="folow type-1"><a href="https://linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fwww.dadch-co.com&title=Venez%20consulter%20notre%20site%20de%20web%20pour%20avoir%20plus%20information" target="_blank"><i class="icon-pinterest"></i></a>
+                    <a href="https://twitter.com/share?url=http%3A%2F%2Fwww.dadch-co.com&text=Venez%20consulter%20notre%20site%20de%20web%20pour%20avoir%20plus%20information" target="_blank"><i class="icon-twitter"></i></a>
+                          </div>  
+                   </div>
+                   <div class="empty-sp-md-0 empty-sp-sm-30 empty-sp-xs-50"></div>
+               </div>
+               <div class="col-lg-3 col-sm-6 col-xs-12">
+                   <div class="footer-item">
+                       <h5 class="title caption-5">Dernières nouvelles</h5>
+                       <div class="empty-sp-sm-30 empty-sp-xs-20"></div>
+                       {% for ad in ads %}
+                         <div class="recent-mini-link">
+                             <a href="{{path('blog_show', {'slug': ad.annonce.slug})}}" class="caption-6 color-1 lg">{{ad.annonce.title}}</a>
+                               <span>{{ad.annonce.createdAt|date("F jS \\a\\t g:ia")}}</span>
+                         </div>
+                       {% endfor %}
+                   </div>
+                   <div class="empty-sp-md-30 empty-sp-sm-30 empty-sp-xs-30"></div>
+               </div> 
+               <div class="col-lg-3 col-sm-6 col-xs-12">
+                   <div class="footer-item">
+                       <h5 class="title caption-5"></h5>
+                       <div class="empty-sp-sm-30 empty-sp-xs-20"></div>
+                         <div class="footer-instagram">
+                             
+                         </div>
+                   </div>
+                   <div class="empty-sp-md-0 empty-sp-sm-20 empty-sp-xs-30"></div>
+               </div>
+               <div class="col-lg-3 col-sm-6 col-xs-12">
+                   <div class="footer-item">
+                       <h5 class="title caption-5">Prendre contact</h5>
+                       <div class="empty-sp-sm-20 empty-sp-xs-20"></div>
+                             <div class="simple-text size-1 color-1">
+                                 <p>L'assistance en ligne est disponible 24 heures sur 24, 
+Prenez contact avec nous. Vous pouvez nous écrire à tout moment :</p>
+                             </div>
+                             <div class="empty-sp-sm-30 empty-sp-xs-20"></div>
+                             <a href="{{path('home_contact')}}" class="btn btn-primary button-style-1 type-2">Prendre contact !</a>
+                   </div>
+                   <div class="empty-sp-md-0 empty-sp-sm-20 empty-sp-xs-20"></div>
+               </div> 
+           </div>
+           <div class="empty-sp-lg-50 empty-sp-md-30 empty-sp-sm-20 empty-sp-xs-10"></div>
+           <div class="row">
+               <div class="col-md-12">
+                    <div class="copyright">
+                       <span>© {{ 'now' | date('Y') }} Tous droits réservés. Développement avec <i class="icon-heart"></i> par</span>
+                         <a href="#"> Hassane</a>
+                    </div>
+               </div>
+           </div>
+           <div class="empty-sp-md-50 empty-sp-md-50 empty-sp-sm-50 empty-sp-xs-20"></div>
+       </div> 
+   </footer>

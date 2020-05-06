@@ -1,0 +1,143 @@
+{% extends "admin/base.html.twig" %}
+
+{% block title %}Accueil{% endblock %}
+
+{% block body %}
+<div class="container-fluid">
+        <div class="page-header filled full-block light">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Administration du site</h2>
+                    <p>Dadch&amp;co</p>
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-page-breadcrumb">
+                        <li><a href="#">Home <i class="zmdi zmdi-chevron-right"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                    <div class="card bg-primary text-white mb-3 text-center">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-4">
+                                    <i class="zmdi zmdi-accounts zmdi-hc-4x"></i>
+                                </div>
+                                <div class="col-8">
+                                    <h4 class="card-title">{{ stats.users }} utilisateurs</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card text-white bg-dark mb-3 text-center">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-4">
+                                    <i class="zmdi zmdi-view-carousel zmdi-hc-4x"></i>
+                                </div>
+                                <div class="col-8">
+                                    <h4 class="card-title">{{ stats.ads }} annonces</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card text-white bg-warning mb-3 text-center">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-4">
+                                    <i class="zmdi zmdi-border-color zmdi-hc-4x"></i>
+                                </div>
+                                <div class="col-8">
+                                    <h4 class="card-title">{{ stats.etudes }} études</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card text-white bg-success mb-3 text-center">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-4">
+                                    <i class="zmdi zmdi-comment-alt-text zmdi-hc-4x"></i>
+                                </div>
+                                <div class="col-8">
+                                    <h4 class="card-title">{{ stats.comments }} avis</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+        </div>
+        <hr>
+        <div class="row">
+        <div class="col">
+            <div class="alert alert-success">
+                <h2 class="alert-heading my-3"><i class="zmdi zmdi-long-arrow-up"></i> Les annonces populaires</h2>
+
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Annonce</th>
+                            <th>Poprio</th>
+                            <th>Moyenne</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for ad in bestAds %}
+                        <tr>
+                            <td>{{ad.title}}</td>
+                            <td>
+                                <img src="{{ad.picture}}" alt="" class="avatar avatar-micro"> {{ad.firstName}} {{ad.lastName}}
+                            </td>
+                            <td class="text-center">
+                                <span class="badge badge-dark">
+                                    {{ad.note | number_format(1, ",", " ")}}
+                                </span>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="col">
+             <div class="alert alert-danger">
+                <h2 class="alert-heading my-3"><i class="zmdi zmdi-long-arrow-down"></i> Les pires annonces</h2>
+
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Annonce</th>
+                            <th>Poprio</th>
+                            <th>Moyenne</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for ad in worstAds %}
+                        <tr>
+                            <td>{{ad.title}}</td>
+                            <td>
+                                <img src="{{ad.picture}}" alt="" class="avatar avatar-micro"> {{ad.firstName}} {{ad.lastName}}
+                            </td>
+                            <td class="text-center">
+                                <span class="badge badge-dark">
+                                    {{ad.note | number_format(1, ",", " ")}}
+                                </span>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

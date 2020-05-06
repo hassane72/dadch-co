@@ -1,0 +1,87 @@
+{% extends 'admin/base.html.twig' %}
+
+{% block title %}Administration des études{% endblock %}
+
+{% block body %}
+    <div class="container-fluid">
+        <div class="page-header filled full-block light">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Administration du site</h2>
+                    <p>Dadch&amp;co</p>
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-page-breadcrumb">
+                        <li><a href="#">Home <i class="zmdi zmdi-chevron-right"></i></a></li>
+                        <li><a href="#">Etudes <i class="zmdi zmdi-chevron-right"></i></a></li>
+                        <li class="active-page"> List</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="widget-wrap  material-table-widget">
+                    <div class="widget-container margin-top-0">
+                        <div class="widget-content">
+                            <div class="data-action-bar">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="widget-header">
+                                            <h3>Anonce table</h3>
+                                            <p>
+                                               List des Etudes realisé
+                                            </p>
+                                            <a href="{{path('admin_etude_new')}}" class="btn btn-primary">Ajouter une étude</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <table class="table table-striped data-tbl">
+                                <thead>
+                                <tr>
+                                    <th>Id</th>
+                                    <th>Subject</th>
+                                    <th>Compagnie</th>
+                                    <th>Type d'étude</th>
+                                    <th>Pays</th>
+                                    <th>Secteur</th>
+                                    <th class="td-center">Action</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                {% for etude in pagination.data %}
+                                <tr>
+                                    <td>{{etude.id}}</td>
+                                    <td>{{etude.subject}}</td>
+                                    <td>{{etude.compagny}}</td>
+                                    <td>{{etude.typeOfStudy}}</td>
+                                    <td>
+                                        {% for pay in etude.pays %}
+                                            {{pay.nomFr}},
+                                        {% endfor %}
+                                    </td>
+                                    <td>{{etude.secteur}}</td><td class="td-center">
+                                        <div class="btn-toolbar" role="toolbar">
+                                            <div class="btn-group" role="group">
+                                                <a href="{{path('admin_etude_edit', {'id': etude.id})}}" class="btn btn-default btn-sm m-user-edit"><i class="zmdi zmdi-edit"></i></a>
+                                                <a href="{{path('admin_etude_delete', {'id': etude.id})}}" class="btn btn-default btn-sm m-user-delete" onclick="return confirm(`Etes vous sur de vouloir supprimer l'annonce : {{etude.subject}} ?`)"><i class="zmdi zmdi-close"></i></a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                 {% endfor %}
+                                </tbody>
+                            </table>
+                            {{pagination.display()}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+{% endblock %}

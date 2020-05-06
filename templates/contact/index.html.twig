@@ -1,0 +1,203 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Contactez nous!{% endblock %}
+
+{% block body %}
+<section class="full-height-baner">
+       <div class="empty-sp-lg-0 empty-sp-md-200 empty-sp-sm-200 empty-sp-xs-160"></div> 
+        <div class="bg ready data-jarallax" data-jarallax="5" style="background-image:url(https://res.cloudinary.com/dadch-co-com/image/upload/v1588604073/dadch-co/contact/contact_wughqj.jpg)"><div class="hold-layer-2"></div></div>
+          <div class="main-baner vertical-align">
+              <div class="container">
+               <div class="row">
+                  <div class="col-lg-12 col-md-12">
+                    <div class="title-style-6 type-1">
+                    <div class="empty-sp-sm-10 empty-sp-xs-10"></div>
+                     <span class="border-cube"><span class="t-l"></span><span class="c-l"></span><span class="b-l"></span></span>
+                     <span class="sub-caption-line lg"><span class="left"></span> <span>dadch&amp;co</span> <span class="right"></span></span>
+                      <div class="empty-sp-sm-10 empty-sp-xs-10"></div>
+                       <h1 class="caption-1 color-1">Contactez-nous</h1>
+                        <div class="empty-sp-sm-20 empty-sp-xs-10"></div>
+                         {% for label, messages in app.flashes %}
+                            <div class="container">
+                                <div class="alert alert-{{ label }} simple-text size-2">
+                                    {% for message in messages %}
+                                        <p class="caption-1 color-2">{{ message | raw }}</p>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        {% endfor %}
+                         <div class="simple-text size-2 color-1">
+                             <p>Informations de contact </p>
+                         </div>
+                         <div class="empty-sp-sm-10 empty-sp-xs-10"></div>
+                     </div>  
+                  </div>
+               </div>  
+              </div>
+          </div>    
+       <div class="empty-sp-lg-0 empty-sp-md-130 empty-sp-sm-200 empty-sp-xs-100"></div> 
+    </section>
+    <section class="section">
+       <div class="empty-sp-lgx-160 empty-sp-lg-100 empty-sp-md-80 empty-sp-sm-80 empty-sp-xs-50"></div>
+          <div class="container">
+               <div class="title-style-5 type-2 color-2 wow zoomIn">
+                   <h2 class="caption-2 title">Contactez-nous</h2>
+                     <div class="empty-sp-sm-10 empty-sp-xs-10"></div>
+                     <div class="title-separator"><span class="left-line"></span>Entrez en contact avec nous que ce soit pour un devis ou pour nous passer le bonjour !</div>
+                     <div class="empty-sp-lg-70 empty-sp-md-50 empty-sp-sm-50 empty-sp-xs-50"></div>
+               </div>
+               <div class="row vertical-wrap">
+                  <div class="col-lg-6 col-md-12 col-sm-12 wow zoomIn">
+                    <div class="title-style-4 border-style type-2">
+                      <div class="title-separator"></div> 
+                      <div class="empty-sp-sm-20 empty-sp-xs-20"></div>
+                       <h3 class="caption-3">COMMENT NOUS TROUVER ?</h3>
+                        <div class="empty-sp-sm-10 empty-sp-xs-10"></div>
+                         <div class="simple-text size-1 color-3">
+                             <p>
+                                DADCH&amp;CO MARKET RESEARCH AGENCY SASU
+                             </p>
+                         </div>
+                         <div class="empty-sp-lg-40 empty-sp-md-30 empty-sp-sm-30 empty-sp-xs-30"></div>
+                           <div class="row">
+                               <div class="col-md-6 col-sm-6  col-xs-12">
+                                 <div class="contact-sm-item type-2">
+                                     <h5 class="caption-5">addresse</h5>
+                                      <div class="empty-sp-sm-10 empty-sp-xs-10"></div>
+                                       <div class="simple-text color-2 size-1">
+                                           <p>
+                                            VDN X BOURGUIBA IMMEUBLE KHADIJA N°9 
+                                            3éme Etage Gauche
+                                            PLACE OMVS|DAKAR – SENEGAL|
+                                            NINEA 005811428 |  RCCM: SN.DKR.2016.B.3528 | 
+
+                                           </p>
+                                       </div>
+                                 </div>
+                                 <div class="empty-sp-sm-40 empty-sp-xs-30"></div>  
+                               </div>
+                               <div class="col-md-6 col-sm-6  col-xs-12">
+                                 <div class="contact-sm-item type-2">
+                                     <h5 class="caption-5">e-mail</h5>
+                                      <div class="empty-sp-sm-10 empty-sp-xs-10"></div>
+                                       <a href="mailto:" class="link">info-dadch@dadch-co.com</a>
+                                       <div class="empty-sp-sm-10 empty-sp-xs-10"></div>
+                                       <a href="mailto:" class="link">ydiaw@dadch-co.com </a>
+                                 </div>
+                                 <div class="empty-sp-sm-40 empty-sp-xs-30"></div>  
+                               </div>
+                           </div>
+                           <div class="row">   
+                               <div class="col-md-6 col-sm-6  col-xs-12">
+                                 <div class="contact-sm-item type-2">
+                                     <h5 class="caption-5">Téléphone</h5>
+                                      <div class="empty-sp-sm-10 empty-sp-xs-10"></div>
+                                       <a href="tel:" class="link">(+221)775 26 29 80 </a>
+                                       <div class="empty-sp-sm-10 empty-sp-xs-10"></div>
+                                       <a href="tel:" class="link">+221 33 824 74 21</a>
+                                 </div>
+                                 <div class="empty-sp-sm-0 empty-sp-xs-30"></div>   
+                               </div>
+                               <div class="col-md-6 col-sm-6 col-xs-12">
+                                 <div class="contact-sm-item type-2">
+                                     <h5 class="caption-5">nous suivre</h5>
+                                       <div class="empty-sp-sm-10 empty-sp-xs-10"></div>
+                                        <div class="folow type-1">
+                                            <a href="https://www.linkedin.com/company/dadch-co-market-research-agency/about/?viewAsMember=true" target="_blank"><i class="icon-pinterest"></i></a>
+                                            <a href="https://twitter.com/DadchCo" target="_blank"><i class="icon-twitter"></i></a>
+                                        </div>
+                                 </div>  
+                               </div>
+                           </div>
+                           <div class="empty-sp-sm-60 empty-sp-xs-50"></div>  
+                         <p class="sub-caption-qoute"><span></span>Infos. de contact :</p>
+                    </div>
+                    <div class="empty-sp-lg-0 empty-sp-md-80 empty-sp-sm-50 empty-sp-xs-50"></div>
+                  </div>
+                  <div class="col-lg-6 col-md-12 col-sm-12 wow zoomIn">
+                         {{form_start(form)}}
+                         <div class="title-style-1 text-left">
+                         <h2 class="caption-3">Vous avez des questions ?</h2>
+                          <div class="empty-sp-md-15 empty-sp-sm-15 empty-sp-xs-15"></div> 
+                           <div class="simple-text color-3 size-1">
+                               <p>
+                                    L'assistance en ligne est disponible 24 heures sur 24, Prenez contact avec nous. Vous pouvez nous écrire à tout moment :
+                               </p>
+                               <p class="alert alert-danger">
+                               {{form_errors(form.message)}}
+                               {{form_errors(form.tel)}}
+                               {{form_errors(form.email)}}
+                               {{form_errors(form.sujet)}}
+                               </p>
+                           </div>
+                         </div>
+                         <div class="empty-sp-sm-30 empty-sp-xs-30"></div>
+                         <div class="row">
+                             <div class="col-md-6 col-sm-6 col-xs-12">
+                                 <div class="input-group input-style-2 color-2 sm focus-1">
+                                    {{form_row(form.nom)}}
+                                 </div> 
+                             </div>
+                             <div class="col-md-6 col-sm-6 col-xs-12">
+                                 <div class="input-group input-style-2 color-2 sm focus-1">
+                                     {{form_row(form.prenom)}}
+                                 </div>
+                             </div>
+                             <div class="empty-sp-sm-20 empty-sp-xs-20"></div>
+                             <div class="col-md-6 col-sm-6 col-xs-12">
+                                 <div class="input-group input-style-2 color-2 sm focus-1">
+                                    {{form_row(form.tel)}}
+                                 </div> 
+                             </div>
+                             <div class="col-md-6 col-sm-6 col-xs-12">
+                                 <div class="input-group input-style-2 color-2 sm focus-1">
+                                     {{form_row(form.email)}}
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="empty-sp-sm-20 empty-sp-xs-20"></div>
+                         <div class="input-group input-style-2 color-2 sm focus-1">
+                             {{form_row(form.sujet)}}
+                         </div>
+                         <div class="empty-sp-sm-20 empty-sp-xs-20"></div>
+                         <div class="input-group input-style-2 color-2 sm focus-1">
+                             {{form_row(form.message)}}
+                             
+                         </div>
+                         <div class="empty-sp-sm-50 empty-sp-xs-20"></div>
+                         <input type="submit" value="submit" class="submit button-style-1 btn btn-primary type-2">
+                  </div>
+                  {{form_end(form)}}
+               </div>
+         </div>
+         <div class="empty-sp-lgx-160 empty-sp-lg-100 empty-sp-md-80 empty-sp-sm-80 empty-sp-xs-50"></div>
+     </section>
+     <section class="section overflow">
+            <div class="container">
+               <div class="row vertical-wrap">
+                    <div class="col-lg-12 hidden-md-down wow zoomIn">
+                       <div class="about-image left">
+                       
+     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d241.2011586381993!2d-17.468546!3d14.7002299!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xace728ec1dec03a8!2sDadch%26co%20Market%20Research%20SASU!5e0!3m2!1sfr!2ssn!4v1588476108987!5m2!1sfr!2ssn" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+     
+                       </div>
+                   </div>
+                </div>
+            </div>
+    </section>
+      <section class="section overflow">
+           <div class="container">
+               <div class="row vertical-wrap">
+                    <div class="col-lg-4 hidden-md-down wow zoomIn">
+
+                   </div>
+                   <div class="col-lg-8 wow zoomIn">
+                   <div class="about-image right">
+                   <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588604072/dadch-co/contact/1_wq3xkm.png" alt="IMMEUBLE">
+                    </div>
+                   </div>
+               </div>
+           </div>
+            <div class="empty-sp-lgx-100 empty-sp-lg-100 empty-sp-md-80 empty-sp-sm-80 empty-sp-xs-70"></div>
+     </section>  
+{% endblock %}
