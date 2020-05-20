@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="fr" target-language="en" datatype="plaintext" original="file.ext">
+    <header>
+      <tool tool-id="symfony" tool-name="Symfony"/>
+    </header>
+    <body>
+      <trans-unit id="YTk8XGh" resname="home.message.1">
+        <source>home.message.1</source>
+        <target>Your partner for transforming information into action plans</target>
+      </trans-unit>
+      <trans-unit id="YYec_Pz" resname="home.message.2">
+        <source>home.message.2</source>
+        <target>
+        The Dadch-Co Market Research Agency, is a company that was created under the Senegalese law under the trade register number: SN.DKR.2016.B.3528, it is a member of an international organization bringing together researchers from around the world; ESOMAR. 
+        It is registered with the Service Provider Platform "System for Award Management" (SAM) of the United States Government under the number...
+        </target>
+      </trans-unit>
+      <trans-unit id="9VOi9ys" resname="home.message.read">
+        <source>home.message.read</source>
+        <target>Read more...</target>
+      </trans-unit>
+      <trans-unit id="nOX4wkd" resname="text.header.1">
+        <source>text.header.1</source>
+        <target>Home</target>
+      </trans-unit>
+      <trans-unit id="CMabSlT" resname="text.header.2">
+        <source>text.header.2</source>
+        <target>Services</target>
+      </trans-unit>
+      <trans-unit id="QBTScZz" resname="text.header.3">
+        <source>text.header.3</source>
+        <target>Methodology</target>
+      </trans-unit>
+      <trans-unit id=".H.cScN" resname="text.header.4">
+        <source>text.header.4</source>
+        <target>Our studies</target>
+      </trans-unit>
+      <trans-unit id="xR0Sp6d" resname="text.header.5">
+        <source>text.header.5</source>
+        <target>Blog</target>
+      </trans-unit>
+      <trans-unit id="i7URWdZ" resname="text.header.6">
+        <source>text.header.6</source>
+        <target>About us</target>
+      </trans-unit>
+      <trans-unit id="gC88lUQ" resname="text.header.7">
+        <source>text.header.7</source>
+        <target>Contact</target>
+      </trans-unit>
+      <trans-unit id="qG2XUdb" resname="text.footer.1">
+        <source>text.footer.1</source>
+        <target><![CDATA[Dadch&co Market Research SASU, VDNxBourguiba Place OMVS Dakar, Senegal]]></target>
+      </trans-unit>
+      <trans-unit id="9NfmSkk" resname="text.footer.2">
+        <source>text.footer.2</source>
+        <target>Latest News</target>
+      </trans-unit>
+      <trans-unit id="aTFd9SV" resname="text.footer.3">
+        <source>text.footer.3</source>
+        <target>Get in touch</target>
+      </trans-unit>
+      <trans-unit id="AJ4x3Bv" resname="text.footer.4">
+        <source>text.footer.4</source>
+        <target>Online support is available 24 hours a day, 
+        Please contact us. You can write to us at any time:</target>
+      </trans-unit>
+      <trans-unit id="12WZXoC" resname="text.footer.5">
+        <source>text.footer.5</source>
+        <target>Get in touch!</target>
+      </trans-unit>
+      <trans-unit id="ygTHbvl" resname="text.footer.6">
+        <source>text.footer.6</source>
+        <target>All rights reserved.</target>
+      </trans-unit>
+      <trans-unit id="SSurE6S" resname="home.message.3">
+        <source>home.message.3</source>
+        <target>Dadch &amp; Co MR Country Profile: Senegal</target>
+      </trans-unit>
+      <trans-unit id="afbDahD" resname="home.message.4">
+        <source>home.message.4</source>
+        <target>Panel database: 354,532:</target>
+      </trans-unit>
+      <trans-unit id="N0vNQe7" resname="home.message.4.1">
+        <source>home.message.4.1</source>
+        <target> of mobile subscribers available 18</target>
+      </trans-unit>
+      <trans-unit id="j9LUa6i" resname="home.message.4.2">
+        <source>home.message.4.2</source>
+        <target>nterviews conducted since 2014: 10,180,910</target>
+      </trans-unit>
+      <trans-unit id="UMtt4u." resname="home.message.5">
+        <source>home.message.5</source>
+        <target>Demographic breakdown:</target>
+      </trans-unit>
+      <trans-unit id="z5WE9Zt" resname="home.message.5.1">
+        <source>home.message.5.1</source>
+        <target>Man, woman:</target>
+      </trans-unit>
+      <trans-unit id="lTlVU9g" resname="home.text.1">
+        <source>home.text.1</source>
+        <target>Welcome to the website of Dadch&amp;co MR</target>
+      </trans-unit>
+      <trans-unit id="Eg_E3Qe" resname="home.text.2">
+        <source>home.text.2</source>
+        <target>Who are we?</target>
+      </trans-unit>
+      <trans-unit id="t54HiVP" resname="home.text.3">
+        <source>home.text.3</source>
+        <target>
+          The Dadch &amp; Co. Market Research Agency is a market research company  which was created under the Senegalese law under the number of trade register: SN.DKR.2016.B.3528, it is a member of an organisation  International grouping of researchers from all over the world; ESOMAR. It is registered at the level of the platform of service providers "System for Award Management" (SAM) of the Government of the United States of America under number, DUNS NUMBER 850527463 under the reference "Commercial and Government Entity" (CAGE) of the Defense Logistics Agency (DLA) for the assignment or validation of (code: SGYJ1). Dadch&amp;co MR offers a complete service of research and opinion surveys in West African countries. 
+          The agency is managed by a team of dedicated professionals with diverse research experience in Senegal. and throughout the West African sub-region (Gambia, Mauritania, Mali, Guinea Conakry - Bissau, Ghana, Kenya, Côte d'Ivoire, Burkina Faso, Benin, Togo, Niger, Nigeria and Congo Kinshasa).
+        </target>
+      </trans-unit>
+      <trans-unit id="E9Cg0yA" resname="home.message.more">
+        <source>home.message.more</source>
+        <target>Read more!</target>
+      </trans-unit>
+      <trans-unit id="5svv_U7" resname="home.text.4">
+        <source>home.text.4</source>
+        <target>OUR SPECIALTIES</target>
+      </trans-unit>
+      <trans-unit id="BL4VWJn" resname="home.text.5">
+        <source>home.text.5</source>
+        <target>
+          The Agency's specialisation is the result of more than 12 years of combined experience in research and consulting. The collective experience of the Dadch &amp; Co Market Research team allows them to adapt research techniques to the needs of their many clients. We offer services in the following areas:
+        </target>
+      </trans-unit>
+      <trans-unit id="arrFRCV" resname="home.text.5.1">
+        <source>home.text.5.1</source>
+        <target>Household and Community Surveys (B2C)</target>
+      </trans-unit>
+      <trans-unit id="ffrv.Yx" resname="home.text.5.2">
+        <source>home.text.5.2</source>
+        <target>Surveys of companies, institutions (B2B)</target>
+      </trans-unit>
+      <trans-unit id="Q9DyMwB" resname="home.text.5.3">
+        <source>home.text.5.3</source>
+        <target>Monitoring and Impact Evaluation (Baseline and Endline Survey)</target>
+      </trans-unit>
+      <trans-unit id="Ut2oij2" resname="home.text.5.4">
+        <source>home.text.5.4</source>
+        <target>Public opinion survey</target>
+      </trans-unit>
+      <trans-unit id="ka1kQxw" resname="home.text.6">
+        <source>home.text.6</source>
+        <target>Why choose us?</target>
+      </trans-unit>
+      <trans-unit id="JdQ.Pq4" resname="home.text.6.1">
+        <source>home.text.6.1</source>
+        <target>Experience in the management of marketing and social research projects:</target>
+      </trans-unit>
+      <trans-unit id="Rjg3BTS" resname="home.text.6.2">
+        <source>home.text.6.2</source>
+        <target>We are responsible for managing the logistics for all aspects of the investigations we conduct.</target>
+      </trans-unit>
+      <trans-unit id="A4D791f" resname="home.text.6.3">
+        <source>home.text.6.3</source>
+        <target>This logistics management includes:</target>
+      </trans-unit>
+      <trans-unit id="BnndP2Y" resname="home.text.6.4">
+        <source>home.text.6.4</source>
+        <target>
+          For a Quantitative Project: Provision of a place and all the necessary equipment for training and data collection such as tablets, computers, rental of vehicles or motorcycles for the transport of the team. A rigorous procedure for recruiting interviewers.  Design of the training manual and equipment deployment plan according to the survey plan already validated by the client and the Research Director. Teams will receive an allowance for their accommodation and food. In addition, the payment of fees is usually made via a money transfer platform.
+        </target>
+      </trans-unit>
+      <trans-unit id="Rf3EjQf" resname="home.text.6.5">
+        <source>home.text.6.5</source>
+        <target>
+          For a Qualitative Project: Provision of a safe and adequate place to conduct the focus groups (FGD). In some villages in Africa, it is difficult to find a place that meets the standard because the conditions are not met for the deployment of logistics and the ideal is to adapt to the context. Most of the time, we rent a classroom in a school or find ourselves under the palaver tree.
+        </target>
+      </trans-unit>
+      <trans-unit id="GSWD_Gv" resname="home.text.7">
+        <source>home.text.7</source>
+        <target>Our Team</target>
+      </trans-unit>
+      <trans-unit id="0OcEOk7" resname="home.text.7.1">
+        <source>home.text.7.1</source>
+        <target>Trust our team of professionals</target>
+      </trans-unit>
+      <trans-unit id="dNzYjWA" resname="home.text.7.2">
+        <source>home.text.7.2</source>
+        <target>
+          Holder of a Master's degree in Marketing Management and Science at the business school - SupDeco. Yoro is a bilingual researcher with more than 13 years of experience in economic and social marketing research. He has held various strategic positions in prestigious multinational firms which has allowed him to have a perfect mastery of the research process from conception to the delivery of data in the form of a synthetic report for decision making.
+          He has managed research projects for various multinational companies including British American Tobacco, USAID, GSMA, Unilever, VOA, Deutchewelle, UNCDF, IOM, FAO and BBC. He has some knowledge of the field in West African countries.
+        </target>
+      </trans-unit>
+      <trans-unit id="jjFBpXB" resname="home.text.7.3">
+        <source>home.text.7.3</source>
+        <target>Responsible for data processing and analysis.</target>
+      </trans-unit>
+      <trans-unit id="bvOvNuj" resname="home.text.7.4">
+        <source>home.text.7.4</source>
+        <target>
+          Prior to assuming the position of Data Manager at Dadch&amp;co MR, Dadch&amp;co MR had significant experience with other companies. He was in charge of the analysis of statistical data for the project studying workers' incomes in Senegal for the Paris School of Economics.
+        </target>
+      </trans-unit>
+      <trans-unit id="Cx8uArw" resname="home.text.7.5">
+        <source>home.text.7.5</source>
+        <target>Administrative and Financial Manager</target>
+      </trans-unit>
+      <trans-unit id="q1cEWKx" resname="home.text.7.6">
+        <source>home.text.7.6</source>
+        <target>
+          Sega THIAM holds a Master's degree in Economics and Management specifically in Accounting-Control-Audit (CCA) from the Polytechnic School of Dakar. Before joining Dadch &amp; Co, Mr as Administrative and Financial Director, Sega was assistant accountant in the Finance and Administration department of RTS1 (Radio and Television Senegal). He also worked in the company 2IRIS as administrative and financial assistant.
+        </target>
+      </trans-unit>
+      <trans-unit id="FWIqOJe" resname="home.text.8">
+        <source>home.text.8</source>
+        <target>They trust us.</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -3,7 +3,9 @@
 {% block title %}
     {{ad.title}}
 {% endblock %}
-
+ {% block description %}
+        <meta name="description" content="{{ad.title}}">
+        {% endblock %}
 {% block body %}
  <section class="section overflow-content page-style-2">
       <div class="empty-sp-md-200 empty-sp-sm-100 empty-sp-xs-100"></div>
@@ -30,7 +32,7 @@
                   <a href="#" class="info-icon"><span>{{ad.comments|length}}</span><i class="icon-comment-empty"></i></a>
                 </div>
             </div>
-              <h1 class="caption-1 color-2">{{ad.title}}</h1>
+              <h3 class="caption-3 color-2">{{ad.title}}</h3>
                <div class="empty-sp-sm-15 empty-sp-xs-15"></div>
                 <div class="simple-text size-2 color-2">
                     <p>{{ad.introduction}}</p>
@@ -160,10 +162,10 @@
                         {% for ad in ads %}
                            <div class="recent-post vertical-wrap">
                                <div class="image align-item hover-img">
-                                   <a href="blog_post.html"><img src="{{ad.annonce.coverImage}}" alt="" class="resp-img"></a>
+                                   <a href="{{path('blog_show', {'slug': ad.annonce.slug})}}"><img src="{{ad.annonce.coverImage}}" alt="" class="resp-img"></a>
                                </div>
                                <div class="text align-item">
-                                   <a href="blog_post.html" class="caption-4">{{ad.annonce.title}}</a>
+                                   <a href="{{path('blog_show', {'slug': ad.annonce.slug})}}" class="caption-4">{{ad.annonce.title}}</a>
                                  <div class="empty-sp-sm-25 empty-sp-xs-20"></div>
                                   <span class="date-post">{{ad.annonce.createdAt|date("F jS \\a\\t g:ia")}}</span>
                                </div>

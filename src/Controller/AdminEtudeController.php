@@ -51,7 +51,7 @@ class AdminEtudeController extends AbstractController
                 'success',
                 "Les données sont on bien été enregistrée !"
             );
-            return $this->redirectToRoute('admin_blog_index');
+            return $this->redirectToRoute('admin_etude_index');
         }
         return $this->render('admin/etude/new.html.twig',['form' => $form->createView()]);
     }

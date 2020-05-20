@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="fr" target-language="fr" datatype="plaintext" original="file.ext">
+    <header>
+      <tool tool-id="symfony" tool-name="Symfony"/>
+    </header>
+    <body>
+      <trans-unit id="YTk8XGh" resname="home.message.1">
+        <source>home.message.1</source>
+        <target>Votre partenaire pour la transformation des informations en plan d’action</target>
+      </trans-unit>
+      <trans-unit id="YYec_Pz" resname="home.message.2">
+        <source>home.message.2</source>
+        <target><![CDATA[
+          L’Agence d'études de marché Dadch & Co, est une entreprise 
+          qui a été créée en vertu de la loi Sénégalaise sous le numéro de 
+          registre commerce : SN.DKR.2016.B.3528, elle est membre d’une organisation 
+          Internationale regroupant des chercheurs à travers le monde entier ;  ESOMAR. 
+          Elle est enregistrée au niveau de la plateforme des fournisseurs de service 
+          “System for Award Management” (SAM) du Gouvernement des Etats -Unies sous le numéro...
+        ]]></target>
+      </trans-unit>
+      <trans-unit id="9VOi9ys" resname="home.message.read">
+        <source>home.message.read</source>
+        <target>Lire plus...</target>
+      </trans-unit>
+      <trans-unit id="nOX4wkd" resname="text.header.1">
+        <source>text.header.1</source>
+        <target>Accueil</target>
+      </trans-unit>
+      <trans-unit id="CMabSlT" resname="text.header.2">
+        <source>text.header.2</source>
+        <target>Services</target>
+      </trans-unit>
+      <trans-unit id="QBTScZz" resname="text.header.3">
+        <source>text.header.3</source>
+        <target>Methodologie</target>
+      </trans-unit>
+      <trans-unit id=".H.cScN" resname="text.header.4">
+        <source>text.header.4</source>
+        <target>Nos études</target>
+      </trans-unit>
+      <trans-unit id="xR0Sp6d" resname="text.header.5">
+        <source>text.header.5</source>
+        <target>Blog</target>
+      </trans-unit>
+      <trans-unit id="i7URWdZ" resname="text.header.6">
+        <source>text.header.6</source>
+        <target>A propos</target>
+      </trans-unit>
+      <trans-unit id="gC88lUQ" resname="text.header.7">
+        <source>text.header.7</source>
+        <target>Contact</target>
+      </trans-unit>
+      <trans-unit id="qG2XUdb" resname="text.footer.1">
+        <source>text.footer.1</source>
+        <target><![CDATA[ Dadch&co Market Research SASU, VDNxBourguiba Place OMVS Dakar, Sénégal – Dakar (Sénégal)]]></target>
+      </trans-unit>
+      <trans-unit id="9NfmSkk" resname="text.footer.2">
+        <source>text.footer.2</source>
+        <target>Dernières nouvelles</target>
+      </trans-unit>
+      <trans-unit id="aTFd9SV" resname="text.footer.3">
+        <source>text.footer.3</source>
+        <target>Prendre contact</target>
+      </trans-unit>
+      <trans-unit id="AJ4x3Bv" resname="text.footer.4">
+        <source>text.footer.4</source>
+        <target>L'assistance en ligne est disponible 24 heures sur 24, 
+        Prenez contact avec nous. Vous pouvez nous écrire à tout moment :
+        </target>
+      </trans-unit>
+      <trans-unit id="12WZXoC" resname="text.footer.5">
+        <source>text.footer.5</source>
+        <target>Prendre contact !</target>
+      </trans-unit>
+      <trans-unit id="ygTHbvl" resname="text.footer.6">
+        <source>text.footer.6</source>
+        <target>Tous droits réservés.</target>
+      </trans-unit>
+      <trans-unit id="SSurE6S" resname="home.message.3">
+        <source>home.message.3</source>
+        <target>Profil de pays Dadch&amp;co MR : Sénégal</target>
+      </trans-unit>
+      <trans-unit id="afbDahD" resname="home.message.4">
+        <source>home.message.4</source>
+        <target>Base de données panel: 354,532:</target>
+      </trans-unit>
+      <trans-unit id="N0vNQe7" resname="home.message.4.1">
+        <source>home.message.4.1</source>
+        <target>d’abonnés mobile disponible 18%</target>
+      </trans-unit>
+      <trans-unit id="j9LUa6i" resname="home.message.4.2">
+        <source>home.message.4.2</source>
+        <target>Entretiens réalisés depuis 2014: 10,180,910</target>
+      </trans-unit>
+      <trans-unit id="UMtt4u." resname="home.message.5">
+        <source>home.message.5</source>
+        <target>Ventilation Démographique:</target>
+      </trans-unit>
+      <trans-unit id="z5WE9Zt" resname="home.message.5.1">
+        <source>home.message.5.1</source>
+        <target>Homme, Femme:</target>
+      </trans-unit>
+      <trans-unit id="lTlVU9g" resname="home.text.1">
+        <source>home.text.1</source>
+        <target>Bienvenue sur le site de Dadch&amp;co MR</target>
+      </trans-unit>
+      <trans-unit id="Eg_E3Qe" resname="home.text.2">
+        <source>home.text.2</source>
+        <target>Qui sommes nous ?</target>
+      </trans-unit>
+      <trans-unit id="t54HiVP" resname="home.text.3">
+        <source>home.text.3</source>
+        <target>
+          L’Agence d'études de marché Dadch &amp; Co, est une entreprise 
+                         qui a été créée en vertu de la loi Sénégalaise sous le numéro de 
+                         registre commerce : SN.DKR.2016.B.3528, elle est membre d’une organisation 
+                         Internationale regroupant des chercheurs à travers le monde entier ;  ESOMAR. 
+                         Elle est enregistrée au niveau de la plateforme des fournisseurs de service 
+                         “System for Award Management” (SAM) du Gouvernement des Etats -Unies sous le numéro, 
+                         DUNS NUMBER 850527463 sous le référence “Commercial and Government Entity” (CAGE) de 
+                         la Defense Logistics Agency (DLA) pour l'affectation ou la validation du (code: SGYJ1).
+                         Dadch&amp;co MR offre un service complet d'enquêtes de recherche et d'opinion dans les pays d'Afrique de l'Ouest. 
+                         L’agence est gérée par une équipe de professionnels dévoués ayant une expérience de recherche diversifiée au Sénégal 
+                         et dans toute la sous-région Ouest-Africaine (Gambie, Mauritanie, Mali, Guinée Conakry - Bissau, Ghana, Kenya, Côte d'Ivoire, 
+                         Burkina Faso, Bénin, Togo, Niger, Nigeria et le Congo Kinshasa).
+        </target>
+      </trans-unit>
+      <trans-unit id="E9Cg0yA" resname="home.message.more">
+        <source>home.message.more</source>
+        <target>En savoir plus !</target>
+      </trans-unit>
+      <trans-unit id="5svv_U7" resname="home.text.4">
+        <source>home.text.4</source>
+        <target>NOS SPECIALITES</target>
+      </trans-unit>
+      <trans-unit id="BL4VWJn" resname="home.text.5">
+        <source>home.text.5</source>
+        <target>
+        La spécialisation de l'Agence est née de plus de 12 ans d'expérience
+                                         combinée dans la recherche et le conseil. 
+                                         L'expérience collective de l'équipe Dadch&amp;Co Market Research 
+                                         leur permet d'adapter les techniques de recherche aux besoins de leurs 
+                                         nombreux clients.
+                                         Nous offrons des services dans les domaines suivants:
+        </target>
+      </trans-unit>
+      <trans-unit id="arrFRCV" resname="home.text.5.1">
+        <source>home.text.5.1</source>
+        <target>Enquêtes auprès des ménages et des collectivités (B2C)</target>
+      </trans-unit>
+      <trans-unit id="ffrv.Yx" resname="home.text.5.2">
+        <source>home.text.5.2</source>
+        <target>Enquêtes auprès des entreprises, institutions (B2B)</target>
+      </trans-unit>
+      <trans-unit id="Q9DyMwB" resname="home.text.5.3">
+        <source>home.text.5.3</source>
+        <target>Suivi et évaluation d'impact (Baseline et Endline Survey)</target>
+      </trans-unit>
+      <trans-unit id="Ut2oij2" resname="home.text.5.4">
+        <source>home.text.5.4</source>
+        <target>Sondage d’opinion</target>
+      </trans-unit>
+      <trans-unit id="ka1kQxw" resname="home.text.6">
+        <source>home.text.6</source>
+        <target>Pourquoi nous choisir ?</target>
+      </trans-unit>
+      <trans-unit id="JdQ.Pq4" resname="home.text.6.1">
+        <source>home.text.6.1</source>
+        <target>Expérience dans la gestion des projets de recherche marketing et sociale:</target>
+      </trans-unit>
+      <trans-unit id="Rjg3BTS" resname="home.text.6.2">
+        <source>home.text.6.2</source>
+        <target>Nous sommes responsables de la gestion de la logistique pour tous les aspects des enquêtes que nous menons.</target>
+      </trans-unit>
+      <trans-unit id="A4D791f" resname="home.text.6.3">
+        <source>home.text.6.3</source>
+        <target> Cette gestion logistique comprend:</target>
+      </trans-unit>
+      <trans-unit id="BnndP2Y" resname="home.text.6.4">
+        <source>home.text.6.4</source>
+        <target>Pour un Projet Quantitatif: Mise à disposition d’un lieu et de tout l'équipement nécessaire pour la formation et à la collecte des données comme les tablettes, les ordinateurs, location des véhicules ou Motos pour le transport de l'équipe. Une procédure rigoureuse de recrutement des enquêteurs.  Conception du manuel de formation et du plan de déploiement des équipements suivant le plan de sondage déjà validé par le client et le Directeur de Recherche. Les équipes recevront une indemnité pour leur logement et restauration. Par ailleurs, le règlement des honoraires se fait habituellement via une plateforme de transfert d’argent.</target>
+      </trans-unit>
+      <trans-unit id="Rf3EjQf" resname="home.text.6.5">
+        <source>home.text.6.5</source>
+        <target>Pour un Projet Qualitatif: Mise à disposition d’un lieu sûr et adéquat pour dérouler les groupes de discussion (FGD). Dans certains villages d’Afrique, il est difficile de trouver un lieu qui respecte la norme car les conditions ne sont réunies pour le déploiement de la logistique et l’idéal c’est de s’adapté au contexte. La plupart du temps, nous louons une salle de classe dans une école ou de se retrouver sous l’arbre à palabre. </target>
+      </trans-unit>
+      <trans-unit id="GSWD_Gv" resname="home.text.7">
+        <source>home.text.7</source>
+        <target>Notre Equipe</target>
+      </trans-unit>
+      <trans-unit id="0OcEOk7" resname="home.text.7.1">
+        <source>home.text.7.1</source>
+        <target>
+        Faites confiance
+                        à notre équipe de
+                        professionnels
+        </target>
+      </trans-unit>
+      <trans-unit id="dNzYjWA" resname="home.text.7.2">
+        <source>home.text.7.2</source>
+        <target>
+          Titulaire d’un Master en Marketing Management &amp; Science à l’école supérieure de commerce – SupDeco. Yoro est un chercheur bilingue avec plus de 13 ans d’expérience dans la recherche marketing économique et sociale. Il a occupé différentes positions stratégiques au sein de prestigieux cabinets multinational ce qui lui a permet d’avoir une parfaite maitrise des processus de recherche de la conception à la livraison des données sous forme de rapport synthétique pour des prises de décision.
+
+          Il a géré des projets de recherche pour diverses entreprises multinationales dont British American Tobacco, USAID, GSMA, Unilever, VOA, Deutchewelle, UNCDF, OIM, FAO et BBC, etc. Il a une certaine connaissance du terrain des pays de l’Afrique de l’Ouest.
+        </target>
+      </trans-unit>
+      <trans-unit id="jjFBpXB" resname="home.text.7.3">
+        <source>home.text.7.3</source>
+        <target>Responsible du traitement et de l’analyse des données</target>
+      </trans-unit>
+      <trans-unit id="bvOvNuj" resname="home.text.7.4">
+        <source>home.text.7.4</source>
+        <target>
+        Avant d’occuper le poste de Gestionnaire des données au sein de Dadch&amp;co MR,
+                                                 Papa a eu des experiences notoires avec d’autres entreprises. 
+                                                 Il était en charge de l'analyse des données statistiques dans le cadre du projet 
+                                                 d'étude des revenus des travailleurs au Sénégal pour le compte de la Paris School 
+                                                 of Economics.
+        </target>
+      </trans-unit>
+      <trans-unit id="Cx8uArw" resname="home.text.7.5">
+        <source>home.text.7.5</source>
+        <target>Responsable Administratif et financier</target>
+      </trans-unit>
+      <trans-unit id="q1cEWKx" resname="home.text.7.6">
+        <source>home.text.7.6</source>
+        <target>
+          Sega THIAM est titulaire d'un Master en économie et gestion spécifiquement 
+          en Comptabilité-Contrôle-Audit (CCA) de l'École polytechnique de Dakar. 
+          Avant de rejoindre Dadch &amp; co, Mr en tant que Directeur Administratif et Financier, 
+          Sega était comptable adjoint au département Finance et Admin de RTS1 (Radio &amp; Télévision Sénégalaise). 
+          Il a également travaillé dans la société 2IRIS en tant que assistant administratif et financier.
+        </target>
+      </trans-unit>
+      <trans-unit id="FWIqOJe" resname="home.text.8">
+        <source>home.text.8</source>
+        <target>Ils nous font confiance</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

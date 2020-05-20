@@ -3,8 +3,8 @@
     Bienvenue sur le site Dadch&amp;Co
 {% endblock %}
 {% block body %}
-<section class="full-height-baner arrow-closest">
-      <div class="swiper-container" data-autoplay="0" data-effect="slide" data-slides-per-view="1" data-loop="0" data-speed="800" data-center="0">
+<section class="full-height-baner">
+      <div class="swiper-container" data-autoplay="3000" data-effect="slide" data-slides-per-view="1" data-loop="0" data-speed="800" data-center="0">
          <div class="swiper-wrapper">
             <div class="swiper-slide">
                <div class="bg" style="background-image:url(https://res.cloudinary.com/dadch-co-com/image/upload/v1588599401/dadch-co/main_image_home32_exonhy.jpg)"><div class="hold-layer-2"></div></div>    
@@ -17,8 +17,17 @@
                               <div class="empty-sp-sm-20 empty-sp-xs-20"></div>
                               <h1 class="caption-1 color-1">Dadch&amp;Co</h1>
                               <div class="empty-sp-sm-15 empty-sp-xs-15"></div>
-                              <div class="simple-text size-2 color-3 italic qoute-type ">
-                                <p class="">Votre partenaire pour la transformation des informations en plan d’action </p>
+                              <div class="simple-text size-2 color-1 italic qoute-type ">
+                                <p>{% trans %}home.message.1{% endtrans %} </p>
+                              </div>
+                              <div class="empty-sp-sm-15 empty-sp-xs-15"></div>
+                              <hr>
+                               <div class="simple-text size-2 color-1 qoute-type ">
+                                 <p>
+                                    {% trans %}home.message.2{% endtrans %}
+                                 </p>
+                                     <br>
+                                   <a href="#next" class="btn btn-primary button-style-1 type-2">{% trans %}home.message.read{% endtrans %}</a>
                               </div>
                               <div class="empty-sp-lg-50 empty-sp-md-30 empty-sp-sm-30 empty-sp-xs-30"></div>
                               <div class="folow type-5">
@@ -37,34 +46,39 @@
                  <div class="main-baner vertical-align fix-header-align">
                     <div class="empty-sp-lg-0 empty-sp-md-120 empty-sp-sm-90 empty-sp-xs-80"></div>
                      <div class="container">
-                         <div class="row">
-                             <div class="col-lg-12 col-md-12 offset-xs-12">
+                        <div class="row">
+                             <div class="col-lg-5 col-md-12 offset-xs-12">
                               <div class="title-style-1 text-left">
-                                <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588599320/dadch-co/carte_ctal7b.png" alt="Carte ">
-                                <h1 class="caption-4 color-1"> Profil de pays Dadch&amp;co MR : Sénégal</h1><br>
-                                <div class="simple-text size-2 color-3 italic qoute-type ">
-                                <div class="row">
-                                  <div class="col-lg-6">
-                                    <p>Base de données: 354,532: </p>
-                                    <ul class="list-style-1 color-2">
-                                      <li><span class="list-point"></span>% d’abonnés mobile disponible 18%</li>
-                                      <li><span class="list-point"></span>Entretiens réalisés depuis 2014: 10,180,910</li>
-                                      <li><span class="list-point"></span>MNO: Tigo / Orange </li>
-                                    </ul>
-                                  </div>
-                                  <div class="col-lg-6">
-                                      <p>Ventilation Démographique: </p>
-                                      <ul class="list-style-1 color-2">
-                                        <li><span class="list-point"></span>Homme, Femme: 65.45%, 34.55% </li>
-                                        <li><span class="list-point"></span>Age 16-25: 63.27%</li>
-                                        <li><span class="list-point"></span>Age 26-35, 36+: 20.9%, 15.82%</li>
-                                      </ul>
-                                  </div>
+                                <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588599320/dadch-co/carte_ctal7b.png" alt="Carte ">   
+                            </div>
+                          </div>
+                          <div class="col-lg-7 col-md-12 offset-xs-12">
+                              <div class="title-style-1 text-right">
+                                <h1 class="caption-4 color-1"> {% trans %}home.message.3{% endtrans %}</h1><br>
+                                <div class="simple-text size-2 color-1 qoute-type ">
+                                     <div class="row">
+                                        <div class="col-lg-6">
+                                          <p>{% trans %}home.message.4{% endtrans %} </p><br>
+                                          <ul class="list-style-1 color-1">
+                                            <li><span class="list-point"></span>% {% trans %}home.message.4.1{% endtrans %}</li>
+                                            <li><span class="list-point"></span>{% trans %}home.message.4.2{% endtrans %}</li>
+                                            <li><span class="list-point"></span>MNO: Free / Orange </li>
+                                          </ul>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <p>{% trans %}home.message.5{% endtrans %} </p><br>
+                                            <ul class="list-style-1 color-1">
+                                              <li><span class="list-point"></span>{% trans %}home.message.5.1{% endtrans %} 65.45%, 34.55% </li>
+                                              <li><span class="list-point"></span>Age 16-25: 63.27%</li>
+                                              <li><span class="list-point"></span>Age 26-35, 36+: 20.9%, 15.82%</li>
+                                            </ul>
+                                        </div>
                                 </div>
                                 </div>
-                      </div>
-                      </div>
-                      </div>
+                            </div>
+                          </div>
+                      </div> 
+                      
                      </div>
                 </div>
             </div>
@@ -74,27 +88,22 @@
          <div class="swiper-arrow-left swipe-arrow col-1"><i class="icon-left-open-big"></i></div>
       </div>
      </section>
-    <section class="section">
-        <div class="empty-sp-lgx-160 empty-sp-lg-100 empty-sp-md-0 empty-sp-sm-0 empty-sp-xs-0"></div>
+    <section class="section" id="next">
+        <div class="empty-sp-lgx-120 empty-sp-lg-100 empty-sp-md-0 empty-sp-sm-0 empty-sp-xs-0"></div>
         <div class="section-title color-2 rotate">
            <div class="sepp"></div>
-            <div class="caption-5 title">Bienvenue sur le site de Dadch&amp;co MR</div>
+            <div class="caption-5 title">{% trans %}home.text.1{% endtrans %}</div>
         </div>
         <div class="container">
             <div class="title-style-4 text-left box-style wow zoomIn">
-              <h2 class="caption-2">Qui sommes nous ?</h2>
+              <h2 class="caption-2">{% trans %}home.text.2{% endtrans %} </h2>
                <div class="empty-sp-sm-15 empty-sp-xs-15"></div>
-                <div class="simple-text size-2 color-2">
+                <div class="simple-text size-2 color-2 text-justify">
                     <p>
-                         Dadch &amp; Co est une agence d'études de marché, qui offre un service complet
-                          d'enquêtes de recherche et d'opinion dans les pays d'Afrique de l'Ouest.
-                           L’agence estgérée par une équipe de professionnels dévoués ayantune expérience
-                            de recherche diversifiée au Sénégal et dans toute la sous-région Ouest-Africaine 
-                            (Gambie, Mauritanie, Mali, Guinée Conakry - Bissau, Ghana, Kenya, Côte d'Ivoire,
-                             Burkina Faso, Bénin, Togo, Niger, Nigeria et le Congo Kinshasa).
+                      {% trans %}home.text.3{% endtrans %}
                     </p>
                     <div class="empty-sp-sm-40 empty-sp-xs-40"></div>
-                    <a href="{{path('a_propos')}}" class="btn btn-primary button-style-1 type-2">En savoir plus !</a>
+                    <a href="{{path('a_propos')}}" class="btn btn-primary button-style-1 type-2">{% trans %}home.message.more{% endtrans %}</a>
                 </div>
                 <div class="empty-sp-lg-100 empty-sp-md-100 empty-sp-sm-100 empty-sp-xs-50"></div>
              </div>
@@ -104,8 +113,8 @@
                        <div class="image-square type-3 no-bg">
                          <div class="sq"></div>
                          <div class="image">
-                           <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588599279/dadch-co/1_lixasa.png" alt="Image de page d'accueil" class="img-full img-sh">
-                           <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588599295/dadch-co/2_gi0qlk.jpg" alt="Image de page d'accueil" class="img-full img-sh">  
+                           <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588599279/dadch-co/1_lixasa.png" alt="Image de page d'accueil" class="img-full img-sh" loading="lazy">
+                           <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588599295/dadch-co/2_gi0qlk.jpg" alt="Image de page d'accueil" class="img-full img-sh" loading="lazy">  
                          </div>
                        </div>
                        <div class="empty-sp-lg-0 empty-sp-md-100 empty-sp-sm-100 empty-sp-xs-0"></div>  
@@ -113,24 +122,20 @@
                      <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12 wow zoomIn">
                          <div class="text">
                             <div class="title-style-1 text-left">
-                               <h4 class="caption-4">NOS SPECIALITES </h4>
+                               <h4 class="caption-4">{% trans %}home.text.4{% endtrans %} </h4>
                                 <div class="empty-sp-sm-20 empty-sp-xs-20"></div>
-                                 <div class="simple-text size-1 color-3">
+                                 <div class="simple-text size-2 color-2 text-justify">
                                      <p>
-                                        La spécialisation de l'Agence est née de plus de 12 ans d'expérience
-                                         combinée dans la recherche et le conseil. 
-                                         L'expérience collective de l'équipe Dadch&amp;Co Market Research 
-                                         leur permet d'adapter les techniques de recherche aux besoins de leurs 
-                                         nombreux clients.
-                                         Nous offrons des services dans les domaines suivants:
+                                     {% trans %}home.text.5{% endtrans %}
+                                        
                                      </p>
                                  </div>
                                  <div class="empty-sp-sm-20 empty-sp-xs-20"></div>
-                                  <ul class="list-img type-3">
-                                      <li><i class="icon-dot"></i><span>Enquêtes auprès des ménages et des collectivités (B2C)</span></li>
-                                      <li><i class="icon-dot"></i><span>Enquêtes auprès des entreprises, institutions (B2B) </span></li>
-                                      <li><i class="icon-dot"></i><span>Suivi et évaluation d'impact (Baseline et Endline Survey);</span></li>
-                                      <li><i class="icon-dot"></i><span>Sondage d’opinion</span></li>
+                                  <ul class="list-style-1 simple-text size-2 color-2 text-justify">
+                                      <li><i class="list-point"></i><span>{% trans %}home.text.5.1{% endtrans %}</span></li>
+                                      <li><i class="list-point"></i><span>{% trans %}home.text.5.2{% endtrans %} </span></li>
+                                      <li><i class="list-point"></i><span>{% trans %}home.text.5.3{% endtrans %}</span></li>
+                                      <li><i class="list-point"></i><span>{% trans %}home.text.5.4{% endtrans %}</span></li>
                                   </ul>
                              </div> 
                          </div>
@@ -144,22 +149,32 @@
         <div class="empty-sp-lgx-130 empty-sp-lg-100 empty-sp-md-80 empty-sp-sm-80 empty-sp-xs-50"></div>
            <div class="container">
                <div class="row vertical-wrap">
-                   <div class="col-lg-6 wow zoomIn">
+                   <div class="col-lg-7 wow zoomIn">
                       <div class="about-text">
                         <div class="title-style-4 border-style lg type-2 center">
                           <div class="title-separator"></div> 
                           <div class="empty-sp-sm-20 empty-sp-xs-20"></div>
-                           <h3 class="caption-3">Pourquoi nous choisir ?</h3>
+                           <h3 class="caption-3">{% trans %}home.text.6{% endtrans %}</h3>
                             <div class="empty-sp-sm-10 empty-sp-xs-10"></div>
-                             <div class="simple-text size-1 color-3">
-                                 <p>Disposant des outils de nouvelles technologies permettant à Dadch&amp;co de fournir à ses clients des résultats à forte valeur ajoutée</p>
+                             <div class="simple-text size-2 color-2">
+                                <p>{% trans %}home.text.6.1{% endtrans %}</p>
+                                 <div class="empty-sp-sm-10 empty-sp-xs-10"></div>
+      
+                                     <p>{% trans %}home.text.6.2{% endtrans %} </p>
+                                      <div class="empty-sp-sm-10 empty-sp-xs-10"></div>
+                                      <p>{% trans %}home.text.6.3{% endtrans %}</p>
+                                       <div class="empty-sp-sm-10 empty-sp-xs-10"></div>
+                                            <p><i class="list-point"></i><span>{% trans %}home.text.6.4{% endtrans %} <br></span></p>
+                                            <div class="empty-sp-sm-10 empty-sp-xs-10"></div>
+                                           <p> <i class="list-point"></i><span>{% trans %}home.text.6.5{% endtrans %}</span></p>
+                                        
                              </div>
                              <div class="empty-sp-lg-50 empty-sp-md-30 empty-sp-sm-30 empty-sp-xs-30"></div>
-                             <a href="{{path('home_service')}}" class="button-style-1 btn btn-primary type-2">En savoir plus !</a>
+                             <a href="{{path('home_service')}}" class="button-style-1 btn btn-primary type-2">{% trans %}home.message.more{% endtrans %}</a>
                         </div>
                       </div>
                    </div>
-                   <div class="col-lg-6 hidden-md-down wow zoomIn">
+                   <div class="col-lg-5 hidden-md-down wow zoomIn">
                        <div class="about-image right">
                            <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588599913/dadch-co/service_img_orbo4v.jpg" alt="">
                        </div>
@@ -173,52 +188,52 @@
         <div class="empty-sp-lgx-160 empty-sp-lg-100 empty-sp-md-80 empty-sp-sm-80 empty-sp-xs-50"></div>
           <div class="container">
              <div class="title-style-4 center wow zoomIn">
-               <h2 class="caption-2 color-1">Notre Equipe</h2>
+               <h2 class="caption-2 color-1">{% trans %}home.text.7{% endtrans %}</h2>
                 <div class="empty-sp-sm-20 empty-sp-xs-10"></div>
                 <div class="title-separator"></div>
                 <div class="empty-sp-sm-20 empty-sp-xs-10"></div>
                  <div class="simple-text size-2 color-1">
-                     <p>Faites confiance
-                        à notre équipe de
-                        professionnels</p>
+                     <p>
+                     {% trans %}home.text.7.1{% endtrans %}
+                     </p>
                  </div>
                  <div class="empty-sp-lg-80 empty-sp-md-50 empty-sp-sm-50 empty-sp-xs-50"></div>
              </div>
              <div class="row wow zoomIn">
                <div class="col-lg-10 offset-lg-1 col-md-12">
                <div class="arrow-closest offset-arrow">
-                 <div class="swiper-container about-testi-slider show-point-sm" data-autoplay="0" data-effect="slide" data-slides-per-view="1" data-loop="0" data-speed="800" data-center="0">
+                 <div class="swiper-container about-testi-slider show-point-sm" data-autoplay="3000" data-effect="slide" data-slides-per-view="1" data-loop="0" data-speed="800" data-center="0">
                      <div class="swiper-wrapper">
                         <div class="swiper-slide">
                            <div class="border-block testi">
                               <div class="empty-sp-sm-50 empty-sp-xs-30"></div>
                                <div class="image">
-                                  <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588599260/dadch-co/team/Image3_tm3ppw.png" alt="about_team_background" class="resp-img"> 
+                                  <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588599260/dadch-co/team/Image3_tm3ppw.png" alt="about_team_background" class="resp-img" loading="lazy"> 
                                </div>
                                <div class="text">
                                   <h4 class="caption-4 color-1">Yoro Diaw</h4>
                                     <div class="empty-sp-sm-10 empty-sp-xs-10"></div>
                                       <div class="sub-title italic color-1">CEO Dadch&amp;co Market Research</div>
                                       <div class="empty-sp-sm-25 empty-sp-xs-25"></div> 
-                                       <div class="quote-block text-left">
-                                           <blockquote class="simple-text size-1 color-1">
+                                      <div class="container">
+                                       <div class="quote-block text-left ">
+                                           <blockquote class="simple-text size-2 color-1 text-justify">
                                               <span>❝</span>
                                                <p>
-                                                Yoro est un chercheur professionnel multilingue qui a eu à travailler
-                                                 sur différentes approches et techniques de recherche « qualitative et quantitative ».
-                                                &nbsp;Il a occupé différents postes de responsabilité durant ses 13 années d’expériences 
-                                                 pour de prestigieuses entreprises multinationales évoluant dans l’industrie des études de marché et sondage d’opinion. 
+                                               {% trans %}home.text.7.2{% endtrans %}
+                                                
                                                </p>
                                                <br>
                                                <span>
-                                                <strong>Email: </strong> ydiaw@dadch-co.com <br> <br>
-                                                <strong>Tel: </strong> +221 775262980 /767393565
+                                                Email: ydiaw@dadch-co.com <br> <br>
+                                                Tel: +221 775262980 /767393565
                                                </span>
                                                <div class="empty-sp-sm-5 empty-sp-xs-5"></div>
                                                <span>❞</span>
                                            </blockquote>
                                            <div class="empty-sp-sm-20 empty-sp-xs-15"></div>
                                        </div>
+                                      </div>
                                </div>
                              <div class="empty-sp-sm-50 empty-sp-xs-30"></div>   
                            </div>
@@ -227,27 +242,25 @@
                            <div class="border-block testi">
                               <div class="empty-sp-sm-50 empty-sp-xs-30"></div>
                                <div class="image">
-                                  <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588599259/dadch-co/team/user2_onnx0n.jpg" alt="about_team_background" class="resp-img"> 
+                                  <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588599259/dadch-co/team/user2_onnx0n.jpg" alt="about_team_background" class="resp-img" loading="lazy"> 
                                </div>
                                <div class="text">
                                   <h4 class="caption-4 color-1">Papa Faye</h4>
                                     <div class="empty-sp-sm-10 empty-sp-xs-10"></div>
-                                      <div class="sub-title italic color-1">Responsible du traitement et de l’analyse des données</div>
+                                      <div class="sub-title italic color-1">{% trans %}home.text.7.3{% endtrans %}</div>
                                       <div class="empty-sp-sm-25 empty-sp-xs-25"></div> 
-                                       <div class="quote-block text-left">
-                                           <blockquote class="simple-text size-1 color-1">
+                                       <div class="container">
+                                       <div class="quote-block text-left ">
+                                           <blockquote class="simple-text size-2 color-1 text-justify">
                                               <span>❝</span>
                                                <p>
-                                                Avant d’occuper le poste de Gestionnaire des données au sein de Dadch&amp;co MR,
-                                                 Papa a eu des experiences notoires avec d’autres entreprises. 
-                                                 Il était en charge de l'analyse des données statistiques dans le cadre du projet 
-                                                 d'étude des revenus des travailleurs au Sénégal pour le compte de la Paris School 
-                                                 of Economics.
+                                               {% trans %}home.text.7.4{% endtrans %}
+                                                
                                                </p>
                                                <br>
                                                <span>
-                                                <strong>Email: </strong> dp-team-executive@dadch-co.com <br> <br>
-                                                <strong>Tel: </strong> +221 338247421 
+                                                Email: dp-team-executive@dadch-co.com <br> <br>
+                                                Tel: +221 338247421 
                                                </span>
                                                <div class="empty-sp-sm-5 empty-sp-xs-5"></div>
                                                <span>❞</span>
@@ -257,37 +270,36 @@
                                </div>
                              <div class="empty-sp-sm-50 empty-sp-xs-30"></div>   
                            </div>
+                           </div>
                         </div>
                         <div class="swiper-slide">
                            <div class="border-block testi">
                               <div class="empty-sp-sm-50 empty-sp-xs-30"></div>
                                <div class="image">
-                                  <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588599259/dadch-co/team/Image5_cd970m.jpg" alt="about_team_background" class="resp-img"> 
+                                  <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588599259/dadch-co/team/Image5_cd970m.jpg" alt="about_team_background" class="resp-img" loading="lazy"> 
                                </div>
                                <div class="text">
                                   <h4 class="caption-4 color-1">Sega THIAM </h4>
                                     <div class="empty-sp-sm-10 empty-sp-xs-10"></div>
-                                      <div class="sub-title italic color-1">Responsable Administratif et financier</div>
+                                      <div class="sub-title italic color-1">{% trans %}home.text.7.5{% endtrans %}</div>
                                       <div class="empty-sp-sm-25 empty-sp-xs-25"></div> 
-                                       <div class="quote-block text-left">
-                                           <blockquote class="simple-text size-1 color-1">
+                                       <div class="container">
+                                       <div class="quote-block text-left ">
+                                           <blockquote class="simple-text size-2 color-1 text-justify">
                                               <span>❝</span>
                                                <p>
-                                                Sega THIAM est titulaire d'un Master en économie et gestion spécifiquement 
-                                                en Comptabilité-Contrôle-Audit (CCA) de l'École polytechnique de Dakar. 
-                                                Avant de rejoindre Dadch &amp; co, Mr en tant que Directeur Administratif et Financier, 
-                                                Sega était comptable adjoint au département Finance et Admin de RTS1 (Radio &amp; Télévision Sénégalaise). 
-                                                Il a également travaillé dans la société 2IRIS en tant que assistant administratif et financier.
+                                               {% trans %}home.text.7.6{% endtrans %}
                                                </p>
                                                <br>
                                                <span>
-                                                <strong>Email: </strong> admin@dadch-co.com <br> <br>
-                                                <strong>Tel: </strong> +221 338247421
+                                                Email: admin@dadch-co.com <br> <br>
+                                                Tel: +221 338247421
                                                </span>
                                                <div class="empty-sp-sm-5 empty-sp-xs-5"></div>
                                                <span>❞</span>
                                            </blockquote>
                                            <div class="empty-sp-sm-20 empty-sp-xs-15"></div>
+                                       </div>
                                        </div>
                                </div>
                              <div class="empty-sp-sm-50 empty-sp-xs-30"></div>   
@@ -310,8 +322,8 @@
         <div class="section-wrap">
            <div class="container">
                <div class="title-style-1 wow fadeInUp">
-                   <span class="sub-title color-1">customers</span>
-                     <h2 class="caption-1">Ils nous font confiance</h2>
+                   <span class="sub-title color-1">Clients</span>
+                     <h2 class="caption-2">{% trans %}home.text.8{% endtrans %}</h2>
                       <div class="empty-sp-sm-10 empty-sp-xs-10"></div>
                        <div class="simple-text italic color-2 size-2">
                            <p></p>
@@ -322,12 +334,102 @@
                 <div class="row wow fadeInUp"> 
                    <div class="swiper-container slide-gutter-15" data-mode="horizontal" data-autoplay="0" data-effect="slide" data-slides-per-view="responsive" data-loop="0" data-speed="800" data-add-slides="6" data-lg-slides="6" data-md-slides="4" data-sm-slides="2" data-xs-slides="1">
                        <div class="swiper-wrapper">
+                       <div class="swiper-slide">
+                            <div class="client-item-2">
+                                <div class="image">
+                                 <a href="#" class="vertical-align full">
+                                    <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588788264/dadch-co/client/microsave_kdashg.png" alt="microsave" class="hove-img" loading="lazy">
+                                    <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588788264/dadch-co/client/microsave_kdashg.png" alt="microsave" loading="lazy">
+                                  </a>    
+                                </div>
+                                <div class="sepp-line"></div>
+                                <div class="empty-sp-sm-30 empty-sp-xs-30"></div>
+                                <div class="title">
+                                    <h5 class="caption-5">MICROSAVE HELIX</h5>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="client-item-2">
+                                <div class="image">
+                                 <a href="#" class="vertical-align full">
+                                    <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588788272/dadch-co/client/wfp-1_yvwmh4.jpg" alt="wfp" class="hove-img" loading="lazy">
+                                    <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588788272/dadch-co/client/wfp-1_yvwmh4.jpg" alt="wfp" loading="lazy">
+                                  </a>    
+                                </div>
+                                <div class="sepp-line"></div>
+                                <div class="empty-sp-sm-30 empty-sp-xs-30"></div>
+                                <div class="title">
+                                    <h5 class="caption-5">WFP</h5>
+                                </div>
+                            </div>
+                          </div>
+                        <div class="swiper-slide">
+                            <div class="client-item-2">
+                                <div class="image">
+                                 <a href="#" class="vertical-align full">
+                                    <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588788242/dadch-co/client/dalberg-research_pgslfc.jpg" alt="dalberg" class="hove-img" loading="lazy" loading="lazy">
+                                    <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588788242/dadch-co/client/dalberg-research_pgslfc.jpg" alt="dalberg" loading="lazy" loading="lazy">
+                                  </a>    
+                                </div>
+                                <div class="sepp-line"></div>
+                                <div class="empty-sp-sm-30 empty-sp-xs-30"></div>
+                                <div class="title">
+                                    <h5 class="caption-5">Dalberg-Research</h5>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                          <div class="client-item-2">
+                                <div class="image">
+                                 <a href="#" class="vertical-align full">
+                                    <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588788246/dadch-co/client/d3_ysfgiv.png" alt="d3" class="hove-img" loading="lazy">
+                                    <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588788246/dadch-co/client/d3_ysfgiv.png" alt="d3" loading="lazy">
+                                  </a>    
+                                </div>
+                                <div class="sepp-line"></div>
+                                <div class="empty-sp-sm-30 empty-sp-xs-30"></div>
+                                <div class="title">
+                                    <h5 class="caption-5">D3-SYSTEMS</h5>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                          <div class="client-item-2">
+                                <div class="image">
+                                 <a href="#" class="vertical-align full">
+                                    <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588788254/dadch-co/client/johns-hopkings_uobacq.png" alt="jhu" class="hove-img" loading="lazy">
+                                    <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588788254/dadch-co/client/johns-hopkings_uobacq.png" alt="jhu" loading="lazy">
+                                  </a>    
+                                </div>
+                                <div class="sepp-line"></div>
+                                <div class="empty-sp-sm-30 empty-sp-xs-30"></div>
+                                <div class="title">
+                                    <h5 class="caption-5">JOHNS HOPKINS</h5>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                          <div class="client-item-2">
+                                <div class="image">
+                                 <a href="#" class="vertical-align full">
+                                    <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588788259/dadch-co/client/Deutsche-Welle_diqxfk.jpg" alt="Deutsche-Welle" class="hove-img" loading="lazy">
+                                    <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588788259/dadch-co/client/Deutsche-Welle_diqxfk.jpg" alt="Deutsche-Welle" loading="lazy">
+                                  </a>    
+                                </div>
+                                <div class="sepp-line"></div>
+                                <div class="empty-sp-sm-30 empty-sp-xs-30"></div>
+                                <div class="title">
+                                    <h5 class="caption-5">DEUTSCHE-WELLE</h5>
+                                </div>
+                            </div>
+                          </div>
                          <div class="swiper-slide">
                             <div class="client-item-2">
                                 <div class="image">
                                  <a href="#" class="vertical-align full">
-                                    <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588599037/dadch-co/client/bia_ikho9q.png" alt="BIA" class="hove-img">
-                                    <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588599037/dadch-co/client/bia_ikho9q.png" alt="BIA">
+                                    <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588599037/dadch-co/client/bia_ikho9q.png" alt="BIA" class="hove-img" loading="lazy">
+                                    <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588599037/dadch-co/client/bia_ikho9q.png" alt="BIA" loading="lazy">
                                   </a>    
                                 </div>
                                 <div class="sepp-line"></div>
@@ -341,8 +443,8 @@
                             <div class="client-item-2">
                                 <div class="image">
                                  <a href="#" class="vertical-align full">
-                                    <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588599037/dadch-co/client/cfao-retail_v1vx5b.png" alt="cfao-retail" class="hove-img">
-                                    <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588599037/dadch-co/client/cfao-retail_v1vx5b.png" alt="cfao-retail">
+                                    <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588599037/dadch-co/client/cfao-retail_v1vx5b.png" alt="cfao-retail" class="hove-img" loading="lazy">
+                                    <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588599037/dadch-co/client/cfao-retail_v1vx5b.png" alt="cfao-retail" loading="lazy">
                                   </a>    
                                 </div>
                                 <div class="sepp-line"></div>
@@ -356,8 +458,8 @@
                             <div class="client-item-2">
                                 <div class="image">
                                  <a href="#" class="vertical-align full">
-                                    <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588599037/dadch-co/client/cofina_ypt6il.png" alt="cofina" class="hove-img">
-                                    <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588599037/dadch-co/client/cofina_ypt6il.png" alt="cofina">
+                                    <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588599037/dadch-co/client/cofina_ypt6il.png" alt="cofina" class="hove-img" loading="lazy">
+                                    <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588599037/dadch-co/client/cofina_ypt6il.png" alt="cofina" loading="lazy">
                                   </a>    
                                 </div>
                                 <div class="sepp-line"></div>
@@ -371,8 +473,8 @@
                             <div class="client-item-2">
                                 <div class="image">
                                  <a href="#" class="vertical-align full">
-                                    <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588599037/dadch-co/client/fao_kyttj4.png" alt="fao" class="hove-img">
-                                    <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588599037/dadch-co/client/fao_kyttj4.png" alt="fao">
+                                    <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588599037/dadch-co/client/fao_kyttj4.png" alt="fao" class="hove-img" loading="lazy">
+                                    <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588599037/dadch-co/client/fao_kyttj4.png" alt="fao" loading="lazy">
                                   </a>    
                                 </div>
                                 <div class="sepp-line"></div>
@@ -386,8 +488,8 @@
                             <div class="client-item-2">
                                 <div class="image">
                                  <a href="#" class="vertical-align full">
-                                    <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588599037/dadch-co/client/free_grxlph.png" alt="free" class="hove-img">
-                                    <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588599037/dadch-co/client/free_grxlph.png" alt="free">
+                                    <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588599037/dadch-co/client/free_grxlph.png" alt="free" class="hove-img" loading="lazy">
+                                    <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588599037/dadch-co/client/free_grxlph.png" alt="free" loading="lazy">
                                   </a>    
                                 </div>
                                 <div class="sepp-line"></div>
@@ -401,8 +503,8 @@
                             <div class="client-item-2">
                                 <div class="image">
                                  <a href="#" class="vertical-align full">
-                                    <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588599038/dadch-co/client/geopoll_og2tni.png" alt="geopoll" class="hove-img">
-                                    <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588599038/dadch-co/client/geopoll_og2tni.png" alt="geopoll">
+                                    <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588599038/dadch-co/client/geopoll_og2tni.png" alt="geopoll" class="hove-img" loading="lazy">
+                                    <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588599038/dadch-co/client/geopoll_og2tni.png" alt="geopoll" loading="lazy">
                                   </a>    
                                 </div>
                                 <div class="sepp-line"></div>
@@ -416,8 +518,8 @@
                             <div class="client-item-2">
                                 <div class="image">
                                  <a href="#" class="vertical-align full">
-                                    <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588599038/dadch-co/client/gfk_vmp3ua.png" alt="gfk" class="hove-img">
-                                    <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588599038/dadch-co/client/gfk_vmp3ua.png" alt="gfk">
+                                    <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588599038/dadch-co/client/gfk_vmp3ua.png" alt="gfk" class="hove-img" loading="lazy">
+                                    <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588599038/dadch-co/client/gfk_vmp3ua.png" alt="gfk" loading="lazy">
                                   </a>    
                                 </div>
                                 <div class="sepp-line"></div>
@@ -431,8 +533,8 @@
                             <div class="client-item-2">
                                 <div class="image">
                                  <a href="#" class="vertical-align full">
-                                    <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588599038/dadch-co/client/infinite_xkz88a.png" alt="Infinite" class="hove-img">
-                                    <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588599038/dadch-co/client/infinite_xkz88a.png" alt="Infinite">
+                                    <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588599038/dadch-co/client/infinite_xkz88a.png" alt="Infinite" class="hove-img" loading="lazy">
+                                    <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588599038/dadch-co/client/infinite_xkz88a.png" alt="Infinite" loading="lazy">
                                   </a>    
                                 </div>
                                 <div class="sepp-line"></div>
@@ -446,8 +548,8 @@
                             <div class="client-item-2">
                                 <div class="image">
                                  <a href="#" class="vertical-align full">
-                                    <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588599038/dadch-co/client/MOI_opevfi.png" alt="MOI" class="hove-img">
-                                    <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588599038/dadch-co/client/MOI_opevfi.png" alt="MOI">
+                                    <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588599038/dadch-co/client/MOI_opevfi.png" alt="MOI" class="hove-img" loading="lazy">
+                                    <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588599038/dadch-co/client/MOI_opevfi.png" alt="MOI" loading="lazy">
                                   </a>    
                                 </div>
                                 <div class="sepp-line"></div>
@@ -461,8 +563,8 @@
                             <div class="client-item-2">
                                 <div class="image">
                                   <a href="#" class="vertical-align full">
-                                    <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588599037/dadch-co/client/callme_ngncff.png" alt="callme" class="hove-img">
-                                    <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588599037/dadch-co/client/callme_ngncff.png" alt="callme">
+                                    <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588599037/dadch-co/client/callme_ngncff.png" alt="callme" class="hove-img" loading="lazy">
+                                    <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588599037/dadch-co/client/callme_ngncff.png" alt="callme" loading="lazy">
                                   </a>    
                                 </div>
                                 <div class="sepp-line"></div>
@@ -476,8 +578,8 @@
                             <div class="client-item-2">
                                 <div class="image">
                                  <a href="#" class="vertical-align full">
-                                    <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588599038/dadch-co/client/oim_sjoplu.png" alt="oim" class="hove-img">
-                                    <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588599038/dadch-co/client/oim_sjoplu.png" alt="oim">
+                                    <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588599038/dadch-co/client/oim_sjoplu.png" alt="oim" class="hove-img" loading="lazy">
+                                    <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588599038/dadch-co/client/oim_sjoplu.png" alt="oim" loading="lazy">
                                   </a>    
                                 </div>
                                 <div class="sepp-line"></div>
@@ -491,8 +593,8 @@
                             <div class="client-item-2">
                                 <div class="image">
                                  <a href="#" class="vertical-align full">
-                                    <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588599038/dadch-co/client/pd_ae85gt.jpg" alt="pd" class="hove-img">
-                                    <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588599038/dadch-co/client/pd_ae85gt.jpg" alt="pd">
+                                    <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588599038/dadch-co/client/pd_ae85gt.jpg" alt="pd" class="hove-img" loading="lazy">
+                                    <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588599038/dadch-co/client/pd_ae85gt.jpg" alt="pd" loading="lazy">
                                   </a>    
                                 </div>
                                 <div class="sepp-line"></div>
@@ -506,8 +608,8 @@
                             <div class="client-item-2">
                                 <div class="image">
                                  <a href="#" class="vertical-align full">
-                                    <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588599038/dadch-co/client/ringer_shsjzx.png" alt="ringer" class="hove-img">
-                                    <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588599038/dadch-co/client/ringer_shsjzx.png" alt="ringer">
+                                    <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588599038/dadch-co/client/ringer_shsjzx.png" alt="ringer" class="hove-img" loading="lazy">
+                                    <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588599038/dadch-co/client/ringer_shsjzx.png" alt="ringer" loading="lazy">
                                   </a>    
                                 </div>
                                 <div class="sepp-line"></div>
@@ -521,8 +623,8 @@
                             <div class="client-item-2">
                                 <div class="image">
                                  <a href="#" class="vertical-align full">
-                                    <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588599039/dadch-co/client/sightsavers_oeg9lv.png" alt="sightsavers" class="hove-img">
-                                    <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588599039/dadch-co/client/sightsavers_oeg9lv.png" alt="sightsavers">
+                                    <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588599039/dadch-co/client/sightsavers_oeg9lv.png" alt="sightsavers" class="hove-img" loading="lazy">
+                                    <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588599039/dadch-co/client/sightsavers_oeg9lv.png" alt="sightsavers" loading="lazy">
                                   </a>    
                                 </div>
                                 <div class="sepp-line"></div>
@@ -536,8 +638,8 @@
                             <div class="client-item-2">
                                 <div class="image">
                                  <a href="#" class="vertical-align full">
-                                    <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588599039/dadch-co/client/sorgem_icivce.png" alt="sorgem" class="hove-img">
-                                    <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588599039/dadch-co/client/sorgem_icivce.png" alt="sorgem">
+                                    <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588599039/dadch-co/client/sorgem_icivce.png" alt="sorgem" class="hove-img" loading="lazy">
+                                    <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588599039/dadch-co/client/sorgem_icivce.png" alt="sorgem" loading="lazy">
                                   </a>    
                                 </div>
                                 <div class="sepp-line"></div>
@@ -551,8 +653,8 @@
                             <div class="client-item-2">
                                 <div class="image">
                                  <a href="#" class="vertical-align full">
-                                    <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588599038/dadch-co/client/oedison_cuhcva.jpg" alt="oedison" class="hove-img">
-                                    <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588599038/dadch-co/client/oedison_cuhcva.jpg" alt="oedison">
+                                    <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588599038/dadch-co/client/oedison_cuhcva.jpg" alt="oedison" class="hove-img" loading="lazy">
+                                    <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588599038/dadch-co/client/oedison_cuhcva.jpg" alt="oedison" loading="lazy">
                                   </a>    
                                 </div>
                                 <div class="sepp-line"></div>
@@ -566,8 +668,8 @@
                             <div class="client-item-2">
                                 <div class="image">
                                  <a href="#" class="vertical-align full">
-                                    <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588599038/dadch-co/client/research-solutions-africa_xkwqet.png" alt="research-solutions-africa" class="hove-img">
-                                    <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588599038/dadch-co/client/research-solutions-africa_xkwqet.png" alt="research-solutions-africa">
+                                    <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588599038/dadch-co/client/research-solutions-africa_xkwqet.png" alt="research-solutions-africa" class="hove-img" loading="lazy">
+                                    <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588599038/dadch-co/client/research-solutions-africa_xkwqet.png" alt="research-solutions-africa" loading="lazy">
                                   </a>    
                                 </div>
                                 <div class="sepp-line"></div>

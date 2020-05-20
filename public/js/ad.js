@@ -28,5 +28,6 @@
         handleDeleteButtons();
 
         CKEDITOR.replace( 'blog_contenu', {
-            extraPlugins: 'chart'
-          } );
+            extraPlugins: 'chart, pastecode',
+            allowedContent : true
+        } );

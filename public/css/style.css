@@ -1005,7 +1005,7 @@ html {
 .list-style-1 {
   position: relative; }
   .list-style-1 li {
-    font-size: 0.9286rem;
+    font-size: 1.113rem;
     line-height: 1.143rem;
     color: #a1a1a1;
     padding-left: 2.143rem;
@@ -1058,11 +1058,10 @@ html {
     vertical-align: middle;
     padding-left: 1.071rem; }
   .list-img.type-3 span, .list-img.type-3 a {
-    font-size: 0.9286rem;
-    text-transform: uppercase;
+    font-size: 1.113rem;
     color: #989898; }
   .list-img.type-3 {
-    font-size: 0.9286rem;
+    font-size: 1.113rem;
     line-height: 1.429rem;
     color: #989898; }
   .list-img.type-3 li {
@@ -2796,8 +2795,8 @@ html {
     text-transform: lowercase;
     margin: 0 0.3571rem; }
   .pagination.pagination-blog .page-item.active .page-link, .pagination.pagination-blog .page-item:hover .page-link {
-    background: #8b7f20;
-    border-color: #8b7f20;
+    background: #f78f1e;
+    border-color: #f78f1e;
     color: #fff; }
 
 .blog-detail-slider {
@@ -3176,58 +3175,58 @@ article blockquote {
 
 /*======HOME PAGE 10======*/
 .color-style-2 .testi-block .simple-text span, .color-style-2 .info-item .timer, .color-style-2 .blog-big-item .title:hover a, .color-style-2 .on-white .info-icon i, .color-style-2 .item-icon.type-2 .icon, .color-style-2 .quote-block .simple-text span, .color-style-2 .list-img i, .color-style-2 .portfolio-item-1.type-1 .title:hover a {
-  color: #cd9129; }
+  color: #f78f1e; }
 
 .color-style-2 .header-style-2 .nav-link.active, .color-style-2 .header-style-2 .nav-link:hover, .color-style-2 .title-style-4 .title-separator, .color-style-2 .icon-numb, .color-style-2 .skill-block .skill-line div {
-  background: #cd9129; }
+  background: #f78f1e; }
 
 .color-style-2 .service-item-1:hover .hold-layer-2 {
   background: rgba(205, 145, 41, 0.8); }
 
 .color-style-2 .filter-mob-list.type-1 li:hover, .color-style-2 .filter-mob-list.type-1 li.active {
-  background: #cd9129;
+  background: #f78f1e;
   color: #fff;
-  border-color: #cd9129; }
+  border-color: #f78f1e; }
 
 .color-style-2 .portfolio-item-1.type-1 .layer {
   background: rgba(205, 145, 41, 0.8); }
 
 .color-style-2 .team-item-1:hover .desc {
-  box-shadow: 0px 0px 0px 1.071rem #cd9129; }
+  box-shadow: 0px 0px 0px 1.071rem #f78f1e; }
 
 .color-style-2 .blog-item-2:hover .hold-layer-2 {
   background: rgba(205, 145, 41, 0.8); }
 
 .color-style-2 .button-style-4 {
-  color: #cd9129;
-  border-color: #cd9129; }
+  color: #f78f1e;
+  border-color: #f78f1e; }
 
 .color-style-2 .home10-form .button-style-4 {
-  color: #cd9129;
-  border-color: #cd9129; }
+  color: #f78f1e;
+  border-color: #f78f1e; }
   .color-style-2 .home10-form .button-style-4:hover {
-    color: #111;
-    border-color: #111; }
+    color: #cd9129;
+    border-color: #cd9129; }
 
 .color-style-2 .button-style-4.type-2 {
   color: #fff;
   border-color: #fff; }
 
 .color-style-2 .button-style-4:hover {
-  color: #111;
-  border-color: #111; }
+  color: #cd9129;
+  border-color: #cd9129; }
 
 .color-style-2 .button-style-1 {
-  background: #cd9129;
+  background: #f78f1e;
   color: #fff; }
   .color-style-2 .button-style-1:hover {
-    background: #111; }
+    background: #cd9129; }
 
 .color-style-2 .item-icon.type-2 .icon-numb {
-  background: #cd9129; }
+  background: #f78f1e; }
 
 .color-style-2 .share-link.type-2 a {
-  background: #cd9129;
+  background: #f78f1e;
   color: #fff; }
   .color-style-2 .share-link.type-2 a:hover {
     background: #fff !important; }
@@ -3949,6 +3948,11 @@ article blockquote {
   height: 50vmin;
   min-height: inherit;
   margin-top: 8.214rem; }
+
+.full-height-baner.h-70 {
+    height: 70vmin;
+    min-height: inherit;
+    margin-top: 8.214rem; }
 
 .about-image {
   position: relative;

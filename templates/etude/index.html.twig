@@ -1,25 +1,46 @@
 {% extends 'base.html.twig' %}
 
 {% block title %}Nos études réaliser!{% endblock %}
-
+ {% block description %}
+        <meta name="description" content="Les differents études effectuer par Dadch amp; Co durant plusieur année d'exercices, des études socio-économique, démographique.">
+        {% endblock %}
 {% block body %}
+<section class="full-height-baner h-70">
+       <div class="empty-sp-lg-0 empty-sp-md-200 empty-sp-sm-200 empty-sp-xs-160"></div> 
+        <div class="bg ready data-jarallax" data-jarallax="5" style="background-image:url(https://res.cloudinary.com/dadch-co-com/image/upload/v1589302660/dadch-co/etude/etude_m7q21g.jpg)"><div class="hold-layer-2"></div></div>
+          <div class="main-baner vertical-align">
+              <div class="container">
+               <div class="row">
+                  <div class="col-lg-12 col-md-12">
+                    <div class="title-style-6 type-1">
+                    <div class="empty-sp-sm-10 empty-sp-xs-10"></div>
+                     <span class="border-cube"><span class="t-l"></span><span class="c-l"></span><span class="b-l"></span></span>
+                     <span class="sub-caption-line lg"><span class="left"></span> <span>dadch&amp;co études réalisèes</span> <span class="right"></span></span>
+                      <div class="empty-sp-sm-10 empty-sp-xs-10"></div>
+                       <h1 class="caption-1 color-1">Nos études</h1>
+                        <div class="empty-sp-sm-20 empty-sp-xs-10"></div>
+                         <div class="simple-text size-2 color-1">
+                             <p>NOTRE ESPACE DE TRAVAIL </p>
+                         </div>
+                         <div class="empty-sp-sm-10 empty-sp-xs-10"></div>
+                     </div>  
+                  </div>
+               </div>  
+              </div>
+          </div>    
+       <div class="empty-sp-lg-0 empty-sp-md-130 empty-sp-sm-200 empty-sp-xs-100"></div> 
+     </section>
  <section class="section overflow-content page-style-2">
-      <div class="empty-sp-md-200 empty-sp-sm-100 empty-sp-xs-100"></div>
+      <div class="empty-sp-md-100 empty-sp-sm-100 empty-sp-xs-100"></div>
 	   <div class="container">
          <div class="title-style-1">
-             <span class="sub-title-2">Etude réaliser</span>
-              <h1 class="caption-1 color-2">Nos etudes</h1>
-               <div class="empty-sp-sm-15 empty-sp-xs-15"></div>
-                <div class="simple-text size-2 color-2">
-                    <p>NOTRE ESPACE DE TRAVAIL </p>
-                </div>
+             <span class="sub-title-2">Etudes réalisèes</span>
          </div>
          <div class="empty-sp-md-70 empty-sp-sm-30 empty-sp-xs-30"></div>
 	     <div class="row">
 	         <div class="col-lg-8 col-md-12 col-xs-12">
                 {% for etude in pagination.data %}
 	            <div class="blog-post-item wow slideInLeft">
-                  <a href="{{path('etude_show', {'slug': etude.slug})}}" class="btn btn-secondary font-3 button-style-3 post-tag">cover</a>
 	                <div class="image hover-img">
 	                   <div class="bg" style="background-image:url(https://res.cloudinary.com/dadch-co-com/image/upload/v1588599216/dadch-co/etude/10_gpoodv.jpg)"></div>
 	                </div>
@@ -72,15 +93,15 @@
 	             <div class="blog-sidebar sidebar">
 	                <form action="{{path('etude_search')}}" class="search-form wow slideInRight">
 	                    <div class="input-group input-style-2">
-                          <input type="text" class="form-control" name="search" placeholder="Leave your question..." required>
+                          <input type="text" class="form-control" name="search" placeholder="Recherche par thématique ..." required>
                           <span class="input-group-btn">
-                            <button class="btn btn-secondary button-style-2" type="submit">search</button>
+                            <button class="btn btn-secondary button-style-2" type="submit">Rechercher</button>
                           </span>
                         </div>
 	                </form>
 	                <div class="empty-sp-md-60 empty-sp-sm-25 empty-sp-xs-30"></div>
 	                <div class="sidebar-blog-item wow slideInRight">
-	                   <h3 class="caption-3 title">category</h3>
+	                   <h3 class="caption-3 title">Couvertures</h3>
                          <div class="empty-sp-md-30 empty-sp-sm-30 empty-sp-xs-20"></div>
 	                     <ul class="category-list">
                             {% for pay in pays %}

@@ -3,7 +3,9 @@
 {% block title %}
     {{etude.subject}}
 {% endblock %}
-
+ {% block description %}
+        <meta name="description" content="{{etude.subject}}">
+        {% endblock %}
 {% block body %}
  <section class="section overflow-content page-style-2">
       <div class="empty-sp-md-200 empty-sp-sm-100 empty-sp-xs-100"></div>
@@ -24,7 +26,7 @@
                     {% endif %}
                   </div>
             </div>
-              <h1 class="caption-1 color-2">{{etude.subject}}</h1>
+              <h3 class="caption-3 color-2">{{etude.subject}}</h3>
                <div class="empty-sp-sm-15 empty-sp-xs-15"></div>
                 <div class="simple-text size-2 color-2">
                     <p>Type d'étude: {{etude.typeOfStudy}}</p>
@@ -35,7 +37,7 @@
 	     <div class="row">
 	         <div class="col-lg-8 col-md-12 col-xs-12">
                 <article>
-                      <img src="/img/dadch/etude/10.jpg" alt="" class="wow slideInLeft">
+                      <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588599216/dadch-co/etude/10_gpoodv.jpg" alt="Image d'etude" class="wow slideInLeft">
                       <div class="empty-sp-sm-40 empty-sp-xs-30"></div>
                       <p>{{etude.contenu|raw}} </p>
                       <div class="empty-sp-sm-40 empty-sp-xs-30"></div>
@@ -97,7 +99,7 @@
                         {% for etude in etudes %}
                            <div class="recent-post vertical-wrap">
                                <div class="image align-item hover-img">
-                                   <a href="{{path('blog_show', {'slug': etude.study.slug})}}"><img src="/img/dadch/etude/10.jpg" alt="" class="resp-img"></a>
+                                   <a href="{{path('blog_show', {'slug': etude.study.slug})}}"><img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588599216/dadch-co/etude/10_gpoodv.jpg" alt="Image etude" class="resp-img"></a>
                                </div>
                                <div class="text align-item">
                                    <a href="{{path('blog_show', {'slug': etude.study.slug})}}" class="caption-4">{{etude.study.subject}}</a>

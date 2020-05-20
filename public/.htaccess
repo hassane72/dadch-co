@@ -64,3 +64,10 @@ DirectoryIndex index.php
         # RedirectTemp cannot be used instead
     </IfModule>
 </IfModule>
+
+<IfModule mod_headers.c>
+    Header always set X-FRAME-OPTIONS "DENY"
+    Header always set X-Content-Type-Options "nosniff"
+    Header edit Set-Cookie ^(.*)$ $1;HttpOnly;Secure
+    
+</IfModule>

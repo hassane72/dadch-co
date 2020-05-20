@@ -1,9 +1,9 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Contactez nous!{% endblock %}
+{% block title %} Contactez nous !{% endblock %}
 
 {% block body %}
-<section class="full-height-baner">
+<section class="full-height-baner h-70">
        <div class="empty-sp-lg-0 empty-sp-md-200 empty-sp-sm-200 empty-sp-xs-160"></div> 
         <div class="bg ready data-jarallax" data-jarallax="5" style="background-image:url(https://res.cloudinary.com/dadch-co-com/image/upload/v1588604073/dadch-co/contact/contact_wughqj.jpg)"><div class="hold-layer-2"></div></div>
           <div class="main-baner vertical-align">
@@ -110,7 +110,6 @@
                                </div>
                            </div>
                            <div class="empty-sp-sm-60 empty-sp-xs-50"></div>  
-                         <p class="sub-caption-qoute"><span></span>Infos. de contact :</p>
                     </div>
                     <div class="empty-sp-lg-0 empty-sp-md-80 empty-sp-sm-50 empty-sp-xs-50"></div>
                   </div>
@@ -119,16 +118,18 @@
                          <div class="title-style-1 text-left">
                          <h2 class="caption-3">Vous avez des questions ?</h2>
                           <div class="empty-sp-md-15 empty-sp-sm-15 empty-sp-xs-15"></div> 
-                           <div class="simple-text color-3 size-1">
+                           <div class="simple-text color-3 size-2">
                                <p>
                                     L'assistance en ligne est disponible 24 heures sur 24, Prenez contact avec nous. Vous pouvez nous écrire à tout moment :
                                </p>
+                               {% if not form.vars.valid %}
                                <p class="alert alert-danger">
                                {{form_errors(form.message)}}
                                {{form_errors(form.tel)}}
                                {{form_errors(form.email)}}
                                {{form_errors(form.sujet)}}
                                </p>
+                               {% endif %}
                            </div>
                          </div>
                          <div class="empty-sp-sm-30 empty-sp-xs-30"></div>
@@ -164,8 +165,10 @@
                              {{form_row(form.message)}}
                              
                          </div>
+                         <div class="empty-sp-sm-20 empty-sp-xs-20"></div>
+                         <div class="g-recaptcha" data-sitekey="6LecHvMUAAAAAAaOZBCnTgfm_v1NakgVq57JMv9t"></div>
                          <div class="empty-sp-sm-50 empty-sp-xs-20"></div>
-                         <input type="submit" value="submit" class="submit button-style-1 btn btn-primary type-2">
+                         <input type="submit" value="Envoyer" class="submit button-style-1 btn btn-primary type-2">
                   </div>
                   {{form_end(form)}}
                </div>
@@ -175,29 +178,21 @@
      <section class="section overflow">
             <div class="container">
                <div class="row vertical-wrap">
-                    <div class="col-lg-12 hidden-md-down wow zoomIn">
+                    <div class="col-lg-8 hidden-md-down wow zoomIn">
                        <div class="about-image left">
                        
      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d241.2011586381993!2d-17.468546!3d14.7002299!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xace728ec1dec03a8!2sDadch%26co%20Market%20Research%20SASU!5e0!3m2!1sfr!2ssn!4v1588476108987!5m2!1sfr!2ssn" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
      
                        </div>
                    </div>
+                   <div class="col-lg-4 hidden-md-down wow zoomIn">
+                       <div class="about-image left">
+                       
+                        <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588604072/dadch-co/contact/1_wq3xkm.png" alt="IMMEUBLE">
+     
+                       </div>
+                   </div>
                 </div>
             </div>
-    </section>
-      <section class="section overflow">
-           <div class="container">
-               <div class="row vertical-wrap">
-                    <div class="col-lg-4 hidden-md-down wow zoomIn">
-
-                   </div>
-                   <div class="col-lg-8 wow zoomIn">
-                   <div class="about-image right">
-                   <img src="https://res.cloudinary.com/dadch-co-com/image/upload/v1588604072/dadch-co/contact/1_wq3xkm.png" alt="IMMEUBLE">
-                    </div>
-                   </div>
-               </div>
-           </div>
-            <div class="empty-sp-lgx-100 empty-sp-lg-100 empty-sp-md-80 empty-sp-sm-80 empty-sp-xs-70"></div>
-     </section>  
+    </section>  
 {% endblock %}
